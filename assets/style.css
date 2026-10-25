@@ -290,3 +290,5 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
   .moon-away { transform: none; }
   body > header, body > main > section, body > footer, .moon-gone { transition-duration: .01s; }
 }
+.sticker-board img { cursor: grab; touch-action: none; user-select: none; -webkit-user-drag: none; }
+.sticker-board img.dragging { cursor: grabbing; filter: drop-shadow(0 14px 18px rgba(0,0,0,.25)); }

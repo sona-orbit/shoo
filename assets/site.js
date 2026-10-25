@@ -30,3 +30,32 @@
     if (next !== current) location.href = urlFor(next);
   });
 })();
+
+// Home page sticker board: every sticker can be picked up and dropped anywhere on the page.
+// The offset lives in the CSS `translate` property, so each sticker keeps its own tilt
+// (and the little devil keeps bobbing). The "Shoo!" bubble travels with the devil.
+(() => {
+  const board = document.querySelector('.sticker-board');
+  if (!board) return;
+  const bubble = board.querySelector('.bubble');
+  let zTop = 5;
+  board.querySelectorAll('img').forEach(img => {
+    img.draggable = false;
+    let sx, sy, ox = 0, oy = 0, on = false;
+    const apply = (x, y) => {
+      img.style.translate = `${x}px ${y}px`;
+      if (img.classList.contains('s-devil') && bubble) bubble.style.translate = `${x}px ${y}px`;
+    };
+    img.addEventListener('pointerdown', e => {
+      on = true; sx = e.clientX - ox; sy = e.clientY - oy;
+      img.setPointerCapture(e.pointerId);
+      img.style.zIndex = ++zTop;
+      if (img.classList.contains('s-devil') && bubble) bubble.style.zIndex = zTop + 1;
+      img.classList.add('dragging');
+    });
+    img.addEventListener('pointermove', e => { if (on) { ox = e.clientX - sx; oy = e.clientY - sy; apply(ox, oy); } });
+    const end = () => { on = false; img.classList.remove('dragging'); };
+    img.addEventListener('pointerup', end);
+    img.addEventListener('pointercancel', end);
+  });
+})();
