@@ -3,9 +3,10 @@
 (() => {
   const supported = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'th'];
   const current = window.SHOO_LOCALE;
-  const page = window.SHOO_PAGE || 'index.html';
-  const root = current === 'en' ? '' : '../';
-  const urlFor = (lang) => root + (lang === 'en' ? '' : lang + '/') + page;
+  // Folder-style URLs (no .html): page is '', 'privacy/' or 'support/'; root climbs back to the site root
+  const page = window.SHOO_PAGE || '';
+  const root = window.SHOO_ROOT || '';
+  const urlFor = (lang) => (root + (lang === 'en' ? '' : lang + '/') + page) || './';
   let saved, stay;
   try { saved = localStorage.getItem('shoo-language'); stay = sessionStorage.getItem('shoo-stay'); } catch (_) {}
 
