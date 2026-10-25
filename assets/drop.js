@@ -44,6 +44,7 @@
     photo.remove();
 
     const finish = () => {
+      bringBack(k, count, null);
       count++;
       showState(count);
       busy = false;
@@ -75,7 +76,13 @@
     move.onfinish = () => {
       sparkle(to.x + size / 2, to.y + size / 2);
       showState(count + 1);
-      setTimeout(() => { fly.remove(); count++; busy = false; if (count >= data.order.length) finishAll(); }, 380);
+      const n = count;
+      setTimeout(() => {
+        fly.remove();
+        bringBack(k, n, { left: to.x, top: to.y, width: size });
+        count++; busy = false;
+        if (count >= data.order.length) finishAll();
+      }, 380);
     };
     function finishAll() {
       hint.classList.add('done');
@@ -83,6 +90,26 @@
       hint.querySelector('span').hidden = true;
       reset.hidden = false;
     }
+  }
+
+  // The finished sticker comes back out of the book to where the photo pile is
+  const spots = [[-78, -34, -8], [80, -44, 7], [-70, 52, 5], [74, 46, -6]];
+  function bringBack(k, n, from) {
+    const el = document.createElement('img');
+    el.className = 'drop-made';
+    el.src = data.stickers[k];
+    el.alt = '';
+    const [x, y, r] = spots[n];
+    el.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg)`;
+    pile.prepend(el);
+    if (!from || reduce) return;
+    const end = el.getBoundingClientRect();
+    const s = from.width / end.width;
+    el.animate([
+      { transform: `translate(${x + from.left - end.left + (from.width - end.width) / 2}px, ${y + from.top - end.top + (from.width - end.height) / 2}px) scale(${s})` },
+      { transform: `translate(${x}px, ${y - 30}px) rotate(${r}deg) scale(1.08)`, offset: 0.75 },
+      { transform: `translate(${x}px, ${y}px) rotate(${r}deg)` },
+    ], { duration: 700, easing: 'cubic-bezier(.3,.7,.3,1)' });
   }
 
   function sparkle(x, y) {
@@ -137,6 +164,7 @@
 
   reset.addEventListener('click', () => {
     count = 0;
+    pile.querySelectorAll('.drop-made').forEach(el => el.remove());
     photos.forEach(p => pile.append(p));
     showState(0);
     hint.classList.remove('done');
