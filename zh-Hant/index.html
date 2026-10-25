@@ -14,9 +14,9 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
-<link rel="stylesheet" href="../assets/style.css?v=f163bee4">
+<link rel="stylesheet" href="../assets/style.css?v=5fa7bb18">
 <script>window.SHOO_LOCALE='zh-Hant';window.SHOO_PAGE='';window.SHOO_ROOT='../';</script>
-<script defer src="../assets/site.js?v=f163bee4"></script>
+<script defer src="../assets/site.js?v=5fa7bb18"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
@@ -56,15 +56,22 @@
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "第三季報表.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "提案簡報.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "網路購物 — 購物車 (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "訊息 — 週末去哪玩 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "音樂 — 正在播放", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "照片 — 旅行", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "凌亂的桌面", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "開了六個視窗，桌面還堆滿檔案。按一下小惡魔。", "after": "按一下：桌面乾乾淨淨。再按一下，全部回到原來的位置。"}, {"name": "有人走過來", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "購物、聊天、聽音樂……有人朝你走過來了。", "after": "螢幕上只剩工作。等人走了再按一下。"}, {"name": "開會分享螢幕", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "要在會議裡分享螢幕了？", "after": "只剩你的簡報——不會跳出聊天，也看不到凌亂的桌面。"}], "icons": [["folder", "未命名檔案夾"], ["doc", "發票_最終版v3.pdf"], ["pic", "截圖 2026.png"], ["folder", "舊東西"], ["doc", "待辦 (1).txt"], ["pic", "迷因.jpg"], ["folder", "2025 報稅"], ["doc", "筆記.txt"]], "labels": {"shoo": "按一下把視窗趕走", "bringBack": "按一下把視窗叫回來"}}</script>
-<script defer src="../assets/demo.js?v=f163bee4"></script>
+<script defer src="../assets/demo.js?v=5fa7bb18"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>做成你自己的</h2>
 <p class="section-lead">任何照片都能做成貼紙——你的狗、你的朋友、你最愛的迷因——再讓每一張負責不同的事。</p>
-<div class="yours">
-<img class="shot" src="../assets/shots/zh-Hant-memes.png" alt="放了照片貼紙的 Shoo 貼紙本子" loading="lazy">
-<div><div class="stack" aria-hidden="true"><img src="../assets/meme-chill.png" alt=""><img src="../assets/meme-cat.png" alt=""><img src="../assets/meme-pup.png" alt=""></div><ul class="plan-list"><li>把照片拖進來，Shoo 在你的 Mac 上直接去背</li><li>用自己的分類標籤和顏色整理貼紙</li><li>每張貼紙藏自己那一組視窗</li></ul></div>
+<div class="yours" data-drop>
+<div class="drop-book" role="img" aria-label="貼紙本子"><img class="drop-state" src="../assets/drop/zh-Hant-0.webp" alt="" width="1800" height="1182"><img class="drop-state next" alt="" width="1800" height="1182"></div>
+<div class="drop-side">
+<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="把這張照片做成貼紙"><img src="../assets/drop/chill-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="pup" aria-label="把這張照片做成貼紙"><img src="../assets/drop/pup-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="cat" aria-label="把這張照片做成貼紙"><img src="../assets/drop/cat-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="dou" aria-label="把這張照片做成貼紙"><img src="../assets/drop/dou-photo.jpg" alt="" draggable="false"></button></div>
+<p class="drop-hint" aria-live="polite"><b>把照片拖進本子</b><span>或直接點一下照片</span></p>
+<button class="drop-reset" type="button" hidden>再玩一次</button>
+<ul class="plan-list"><li>把照片拖進來，Shoo 在你的 Mac 上直接去背</li><li>用自己的分類標籤和顏色整理貼紙</li><li>每張貼紙藏自己那一組視窗</li></ul>
 </div>
+</div>
+<script type="application/json" id="drop-data">{"states": ["../assets/drop/zh-Hant-0.webp", "../assets/drop/zh-Hant-1.webp", "../assets/drop/zh-Hant-2.webp", "../assets/drop/zh-Hant-3.webp", "../assets/drop/zh-Hant-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.png", "cat": "../assets/drop/cat-sticker.png", "pup": "../assets/drop/pup-sticker.png", "chill": "../assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "把照片拖進本子", "done": "四張都變成貼紙了。"}</script>
+<script defer src="../assets/drop.js?v=5fa7bb18"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -114,7 +121,7 @@
 <p class="moon-tip">也可以再按一下月亮，或按 Esc。</p></div>
 </div>
 <script type="application/json" id="moon-data">{"shoo": "把整個網頁趕走", "bring": "把網頁叫回來", "stickers": ["../assets/sticker-shoo.png", "../assets/sticker-mug.png", "../assets/sticker-moon.png", "../assets/sticker-tv.png", "../assets/sticker-plane.png", "../assets/sticker-cactus.png"]}</script>
-<script defer src="../assets/moon.js?v=f163bee4"></script>
+<script defer src="../assets/moon.js?v=5fa7bb18"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="../zh-Hant/support/">支援</a>

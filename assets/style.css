@@ -211,15 +211,38 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--m
 
 /* ===== make it yours ===== */
 .yours { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 36px; align-items: center; }
-.yours .shot { filter: drop-shadow(0 12px 20px rgba(28,33,48,.18)); }
-.yours .stack { position: relative; height: 260px; }
-.yours .stack img { position: absolute; width: 46%; filter: drop-shadow(0 6px 8px rgba(0,0,0,.2)); }
-.yours .stack img:nth-child(1) { left: 0; top: 0; transform: rotate(-8deg); }
-.yours .stack img:nth-child(2) { right: 4%; top: 6%; transform: rotate(7deg); }
-.yours .stack img:nth-child(3) { left: 24%; bottom: 0; transform: rotate(-3deg); }
-.shot-big { border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); }
-@media (max-width: 860px) { .yours { grid-template-columns: 1fr; } }
-@media (max-width: 860px) { .yours .stack { height: 200px; max-width: 360px; margin: 0 auto 10px; } .yours .stack img { width: 40%; } }
+.drop-book { position: relative; filter: drop-shadow(0 12px 20px rgba(28,33,48,.18)); }
+.drop-book .drop-state { width: 100%; }
+.drop-book .drop-state.next { position: absolute; inset: 0; opacity: 0; transition: opacity .35s ease; }
+.drop-book .drop-state.next.show { opacity: 1; }
+.drop-book.hot { filter: drop-shadow(0 0 0 transparent) drop-shadow(0 0 18px color-mix(in srgb, var(--tomato) 55%, transparent)); }
+.drop-side { position: relative; }
+.drop-pile { position: relative; height: 230px; max-width: 300px; margin: 0 auto; }
+.drop-photo { position: absolute; left: 50%; top: 50%; width: 170px; margin: -85px 0 0 -85px; padding: 8px 8px 26px; background: #fff; border: 0; border-radius: 4px; box-shadow: 0 8px 18px rgba(28,33,48,.22); cursor: grab; touch-action: none; transition: transform .25s ease, opacity .2s ease; }
+.drop-photo img { width: 100%; border-radius: 2px; pointer-events: none; }
+.drop-photo:nth-last-child(1) { transform: rotate(-5deg); z-index: 4; }
+.drop-photo:nth-last-child(2) { transform: translate(34px, 8px) rotate(7deg); z-index: 3; }
+.drop-photo:nth-last-child(3) { transform: translate(-36px, 14px) rotate(-11deg); z-index: 2; }
+.drop-photo:nth-last-child(4) { transform: translate(14px, 22px) rotate(12deg); z-index: 1; }
+.drop-photo:not(:nth-last-child(1)) { pointer-events: none; }
+.drop-photo:nth-last-child(1):hover { transform: rotate(-2deg) scale(1.04); }
+.drop-photo.dragging { cursor: grabbing; transition: none; z-index: 60; box-shadow: 0 18px 30px rgba(28,33,48,.3); }
+.drop-photo:focus-visible { outline: 3px solid var(--tomato); outline-offset: 3px; }
+.drop-hint { text-align: center; margin: 14px 0 6px; }
+.drop-hint b { display: inline-block; background: var(--ink); color: var(--paper); padding: 6px 14px; border-radius: 14px; font-size: 15px; animation: nudge-left 1.4s ease-in-out infinite; }
+.drop-hint span { display: block; color: var(--muted); font-size: 13px; margin-top: 6px; }
+.drop-hint.done b { animation: none; background: var(--tomato); color: #1c2130; }
+.drop-reset { display: block; margin: 4px auto 10px; font: inherit; font-weight: 700; font-size: 14px; color: var(--ink); background: var(--card); border: 1.5px solid var(--line); border-radius: 12px; padding: 6px 16px; cursor: pointer; }
+[hidden] { display: none !important; }
+.drop-fly { position: fixed; z-index: 70; pointer-events: none; }
+.drop-fly img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.drop-fly .raw { background: #fff; padding: 4px; border-radius: 4px; object-fit: cover; }
+.drop-fly .cut { opacity: 0; filter: drop-shadow(0 4px 6px rgba(0,0,0,.2)); }
+.drop-spark { position: fixed; z-index: 71; pointer-events: none; font-size: 26px; }
+@keyframes nudge-left { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-6px); } }
+@media (max-width: 860px) { .yours { grid-template-columns: 1fr; } .drop-side { order: -1; } .drop-pile { height: 200px; } .drop-photo { width: 140px; margin: -70px 0 0 -70px; } .drop-hint b { animation-name: nudge-down; } }
+@keyframes nudge-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+@media (prefers-reduced-motion: reduce) { .drop-hint b { animation: none; } }
 
 /* moon sticker: follows the scroll in the top-right corner; click to shoo the whole page */
 .moon-shoo { position: fixed; top: 78px; right: 18px; z-index: 30; display: flex; align-items: center; gap: 10px; pointer-events: none; }
