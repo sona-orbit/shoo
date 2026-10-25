@@ -10,11 +10,7 @@
   const sticker = root.querySelector('.demo-sticker');
   const bubble = root.querySelector('.demo-bubble');
   const hint = root.querySelector('.demo-hint');
-  // Like the app: "Shoo!" pops for 2 seconds, then only a small count badge stays
-  const badge = document.createElement('span');
-  badge.className = 'demo-badge';
-  badge.setAttribute('aria-hidden', 'true');
-  sticker.append(badge);
+  // Like the app: "Shoo!" pops for 2 seconds, then disappears without a trace
   let bubbleTimer;
 
   // Desktop file icons along the right edge
@@ -60,8 +56,6 @@
     clearTimeout(bubbleTimer);
     bubble.classList.toggle('show', shooed);
     if (shooed) bubbleTimer = setTimeout(() => bubble.classList.remove('show'), 2000);
-    badge.textContent = shooed ? s.hide.length : '';
-    badge.classList.toggle('show', shooed);
     sticker.setAttribute('aria-pressed', shooed);
     sticker.setAttribute('aria-label', shooed ? data.labels.bringBack : data.labels.shoo);
   }

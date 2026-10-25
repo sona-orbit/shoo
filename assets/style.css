@@ -220,5 +220,3 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--m
 .shot-big { border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); }
 @media (max-width: 860px) { .yours { grid-template-columns: 1fr; } }
 @media (max-width: 860px) { .yours .stack { height: 200px; max-width: 360px; margin: 0 auto 10px; } .yours .stack img { width: 40%; } }
-.demo-badge { position: absolute; right: 2%; top: 2%; min-width: 24%; aspect-ratio: 1; border-radius: 50%; background: #1c2130; color: #fff; border: 2px solid #fff; display: grid; place-items: center; font-size: clamp(9px, 1.3vw, 14px); font-weight: 800; transform: scale(0); transition: transform .25s ease; }
-.demo-badge.show { transform: scale(1); }
