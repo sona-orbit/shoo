@@ -14,9 +14,9 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
-<link rel="stylesheet" href="assets/style.css?v=744bd3c0">
+<link rel="stylesheet" href="assets/style.css?v=e50c6709">
 <script>window.SHOO_LOCALE='en';window.SHOO_PAGE='';window.SHOO_ROOT='';</script>
-<script defer src="assets/site.js?v=744bd3c0"></script>
+<script defer src="assets/site.js?v=e50c6709"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
@@ -26,13 +26,14 @@
 </div></header>
 <main>
 <section class="hero"><div class="wrap hero-grid">
-<div>
+<div class="hero-text">
 <p class="eyebrow">A sticker book for your Mac desktop</p>
 <h1>Click a sticker. <span class="accent">Windows shoo away.</span></h1>
 <p class="lead">Stick Shoo on your desktop and tell it which apps or windows it looks after. One click and they all disappear; another click and everything is back exactly where it was.</p>
 <span class="button soon" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.67zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>Coming soon to the Mac App Store</span>
 <p class="button-note">Free to download · macOS 14 or later</p>
 </div>
+<div class="board-wrap">
 <div class="sticker-board" aria-hidden="true">
 <div class="note"></div><div class="tape"></div>
 <img class="s-mug" src="assets/sticker-mug.png" alt="">
@@ -41,7 +42,11 @@
 <img class="s-cactus" src="assets/sticker-cactus.png" alt="">
 <img class="s-devil" src="assets/sticker-shoo.png" alt="">
 <span class="bubble">Shoo!</span>
+<span class="board-tip"></span>
 </div>
+<p class="board-note">Each sticker looks after part of this page. Click one.</p>
+</div>
+<script type="application/json" id="board-data">{"note": "Each sticker looks after part of this page. Click one.", "hide": "Click to hide", "show": "Click to bring back", "devil": "the headline", "mug": "the menu", "tv": "the demo", "moon": "the top bar", "cactus": "everything below"}</script>
 </div></section>
 <section id="demo"><div class="wrap">
 <h2>Click once. Clean desk.</h2>
@@ -56,7 +61,7 @@
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "Quarterly Report.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "Pitch Deck.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "Online Shopping — Cart (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "Messages — Weekend plans 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "Music — Now Playing", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "Photos — Vacation", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "Messy desktop", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "Six windows and a pile of files. Click the little devil.", "after": "One click: a clean desk. Click again and everything is back exactly where it was."}, {"name": "Someone walks by", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "Shopping, chatting, music… and someone is walking over.", "after": "Only work is left on screen. Click again when they’re gone."}, {"name": "Sharing your screen", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "About to share your screen in a meeting?", "after": "Just your slides — no chats popping up, no messy desktop."}], "icons": [["folder", "Untitled folder"], ["doc", "invoice_final_v3.pdf"], ["pic", "Screenshot 2026.png"], ["folder", "Old stuff"], ["doc", "todo (1).txt"], ["pic", "meme.jpg"], ["folder", "Taxes 2025"], ["doc", "notes.txt"]], "labels": {"shoo": "Click to shoo the windows away", "bringBack": "Click to bring the windows back"}}</script>
-<script defer src="assets/demo.js?v=744bd3c0"></script>
+<script defer src="assets/demo.js?v=e50c6709"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>Make it yours</h2>
@@ -71,7 +76,7 @@
 </div>
 </div>
 <script type="application/json" id="drop-data">{"states": ["assets/drop/en-0.webp", "assets/drop/en-1.webp", "assets/drop/en-2.webp", "assets/drop/en-3.webp", "assets/drop/en-4.webp"], "stickers": {"dou": "assets/drop/dou-sticker.png", "cat": "assets/drop/cat-sticker.png", "pup": "assets/drop/pup-sticker.png", "chill": "assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "Drag a photo into the book", "done": "All four are stickers now.", "out": "Drag the new sticker out of the book and put it anywhere", "sticker": "Drag this sticker out of the book"}</script>
-<script defer src="assets/drop.js?v=744bd3c0"></script>
+<script defer src="assets/drop.js?v=e50c6709"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -121,7 +126,7 @@
 <p class="moon-tip">Or click the moon again, or press Esc.</p></div>
 </div>
 <script type="application/json" id="moon-data">{"shoo": "Shoo this whole page away", "bring": "Bring the page back", "stickers": ["assets/sticker-shoo.png", "assets/sticker-mug.png", "assets/sticker-moon.png", "assets/sticker-tv.png", "assets/sticker-plane.png", "assets/sticker-cactus.png"]}</script>
-<script defer src="assets/moon.js?v=744bd3c0"></script>
+<script defer src="assets/moon.js?v=e50c6709"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="support/">Support</a>

@@ -249,7 +249,7 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--m
 @keyframes nudge-left { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-6px); } }
 @media (max-width: 860px) { .yours { grid-template-columns: 1fr; } .drop-side { order: -1; } .drop-pile { height: 200px; } .drop-photo { width: 140px; margin: -70px 0 0 -70px; } .drop-hint b { animation-name: nudge-down; } }
 @keyframes nudge-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
-@media (prefers-reduced-motion: reduce) { .drop-hint b, 
+@media (prefers-reduced-motion: reduce) { .drop-hint b { animation: none; } }
 /* moon sticker: follows the scroll in the top-right corner; click to shoo the whole page */
 .moon-shoo { position: fixed; top: 78px; right: 18px; z-index: 30; display: flex; align-items: center; gap: 10px; pointer-events: none; }
 .moon-btn { pointer-events: auto; width: 76px; height: 76px; border: 0; padding: 0; background: none; cursor: pointer; transition: transform .2s ease; }
@@ -268,7 +268,6 @@ footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--m
 @keyframes wobble { 0%, 78%, 100% { transform: rotate(0); } 82% { transform: rotate(-14deg) scale(1.08); } 86% { transform: rotate(12deg) scale(1.08); } 90% { transform: rotate(-8deg); } 94% { transform: rotate(5deg); } }
 
 .moon-away { opacity: 0 !important; transform: translate(6vw, -4vh) scale(.94) rotate(1deg); pointer-events: none; }
-body > header, body > main > section, body > footer { transition: opacity .35s ease, transform .45s cubic-bezier(.5,0,.3,1); }
 html.moon-shooed, html.moon-shooed body { overflow: hidden; }
 .moon-gone { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 16px; opacity: 0; transition: opacity .4s ease .15s; }
 .moon-gone.show { opacity: 1; }
@@ -292,3 +291,13 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
 }
 .sticker-board img { cursor: grab; touch-action: none; user-select: none; -webkit-user-drag: none; }
 .sticker-board img.dragging { cursor: grabbing; filter: drop-shadow(0 14px 18px rgba(0,0,0,.25)); }
+.board-note { text-align: center; color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+.board-tip { position: absolute; z-index: 999; transform: translate(-50%, -100%); background: var(--ink); color: var(--paper); font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 10px; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .15s ease; }
+.board-tip.show { opacity: 1; }
+.sticker-board img.on { scale: .9; opacity: .85; }
+.board-pop { position: absolute; background: var(--tomato); color: #1c2130; font-weight: 900; font-size: 18px; padding: 2px 12px; border-radius: 14px; pointer-events: none; animation: board-pop 2s ease forwards; }
+@keyframes board-pop { 0% { transform: rotate(-8deg) scale(0); } 12% { transform: rotate(-8deg) scale(1.1); } 20%, 85% { transform: rotate(-8deg) scale(1); opacity: 1; } 100% { transform: rotate(-8deg) scale(.9); opacity: 0; } }
+.board-away { opacity: 0 !important; translate: 0 -12px; visibility: hidden; pointer-events: none; }
+.hero-text, .site-header .nav-links, .site-header label, .site-header, main > section, body > footer { transition: opacity .35s ease, transform .45s cubic-bezier(.5,0,.3,1), translate .35s ease, visibility 0s; }
+.board-away { transition: opacity .3s ease, translate .35s ease, visibility 0s linear .35s !important; }
+@media (prefers-reduced-motion: reduce) { .board-pop { animation-duration: .01s; } }

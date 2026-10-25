@@ -14,9 +14,9 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
-<link rel="stylesheet" href="../assets/style.css?v=744bd3c0">
+<link rel="stylesheet" href="../assets/style.css?v=e50c6709">
 <script>window.SHOO_LOCALE='zh-Hant';window.SHOO_PAGE='';window.SHOO_ROOT='../';</script>
-<script defer src="../assets/site.js?v=744bd3c0"></script>
+<script defer src="../assets/site.js?v=e50c6709"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
@@ -26,13 +26,14 @@
 </div></header>
 <main>
 <section class="hero"><div class="wrap hero-grid">
-<div>
+<div class="hero-text">
 <p class="eyebrow">貼在 Mac 桌面上的貼紙本子</p>
 <h1>按一下貼紙，<span class="accent">視窗通通藏起來。</span></h1>
 <p class="lead">把 Shoo 貼在桌面上，告訴它要管哪些 App 或視窗。按一下全部藏起來，再按一下，全部回到原來的位置。</p>
 <span class="button soon" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.67zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>即將在 Mac App Store 推出</span>
 <p class="button-note">免費下載 · macOS 14 以上</p>
 </div>
+<div class="board-wrap">
 <div class="sticker-board" aria-hidden="true">
 <div class="note"></div><div class="tape"></div>
 <img class="s-mug" src="../assets/sticker-mug.png" alt="">
@@ -41,7 +42,11 @@
 <img class="s-cactus" src="../assets/sticker-cactus.png" alt="">
 <img class="s-devil" src="../assets/sticker-shoo.png" alt="">
 <span class="bubble">Shoo!</span>
+<span class="board-tip"></span>
 </div>
+<p class="board-note">每張貼紙都管著這一頁的一部分，按按看。</p>
+</div>
+<script type="application/json" id="board-data">{"note": "每張貼紙都管著這一頁的一部分，按按看。", "hide": "按一下藏起", "show": "按一下叫回", "devil": "標題文字", "mug": "導覽選單", "tv": "示範區", "moon": "整條頁首", "cactus": "下面所有內容"}</script>
 </div></section>
 <section id="demo"><div class="wrap">
 <h2>按一下，桌面就乾淨了。</h2>
@@ -56,7 +61,7 @@
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "第三季報表.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "提案簡報.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "網路購物 — 購物車 (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "訊息 — 週末去哪玩 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "音樂 — 正在播放", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "照片 — 旅行", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "凌亂的桌面", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "開了六個視窗，桌面還堆滿檔案。按一下小惡魔。", "after": "按一下：桌面乾乾淨淨。再按一下，全部回到原來的位置。"}, {"name": "有人走過來", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "購物、聊天、聽音樂……有人朝你走過來了。", "after": "螢幕上只剩工作。等人走了再按一下。"}, {"name": "開會分享螢幕", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "要在會議裡分享螢幕了？", "after": "只剩你的簡報——不會跳出聊天，也看不到凌亂的桌面。"}], "icons": [["folder", "未命名檔案夾"], ["doc", "發票_最終版v3.pdf"], ["pic", "截圖 2026.png"], ["folder", "舊東西"], ["doc", "待辦 (1).txt"], ["pic", "迷因.jpg"], ["folder", "2025 報稅"], ["doc", "筆記.txt"]], "labels": {"shoo": "按一下把視窗趕走", "bringBack": "按一下把視窗叫回來"}}</script>
-<script defer src="../assets/demo.js?v=744bd3c0"></script>
+<script defer src="../assets/demo.js?v=e50c6709"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>做成你自己的</h2>
@@ -71,7 +76,7 @@
 </div>
 </div>
 <script type="application/json" id="drop-data">{"states": ["../assets/drop/zh-Hant-0.webp", "../assets/drop/zh-Hant-1.webp", "../assets/drop/zh-Hant-2.webp", "../assets/drop/zh-Hant-3.webp", "../assets/drop/zh-Hant-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.png", "cat": "../assets/drop/cat-sticker.png", "pup": "../assets/drop/pup-sticker.png", "chill": "../assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "把照片拖進本子", "done": "四張都變成貼紙了。", "out": "把做好的貼紙拖出本子，放哪裡都可以", "sticker": "把這張貼紙拖出本子"}</script>
-<script defer src="../assets/drop.js?v=744bd3c0"></script>
+<script defer src="../assets/drop.js?v=e50c6709"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -121,7 +126,7 @@
 <p class="moon-tip">也可以再按一下月亮，或按 Esc。</p></div>
 </div>
 <script type="application/json" id="moon-data">{"shoo": "把整個網頁趕走", "bring": "把網頁叫回來", "stickers": ["../assets/sticker-shoo.png", "../assets/sticker-mug.png", "../assets/sticker-moon.png", "../assets/sticker-tv.png", "../assets/sticker-plane.png", "../assets/sticker-cactus.png"]}</script>
-<script defer src="../assets/moon.js?v=744bd3c0"></script>
+<script defer src="../assets/moon.js?v=e50c6709"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="../zh-Hant/support/">支援</a>
