@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Shoo! 桌面贴纸 — 点一下贴纸，窗口统统藏起来</title>
+<meta name="description" content="Shoo 是贴在 Mac 桌面上的手绘贴纸本子。点一下贴纸，你指定的窗口就藏起来；再点一下，全部回来。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shoo! 桌面贴纸 — 点一下贴纸，窗口统统藏起来">
+<meta property="og:description" content="Shoo 是贴在 Mac 桌面上的手绘贴纸本子。点一下贴纸，你指定的窗口就藏起来；再点一下，全部回来。">
+<meta property="og:image" content="https://sona-orbit.github.io/shoo/assets/shots/zh-Hans-1.jpg">
+<link rel="canonical" href="https://sona-orbit.github.io/shoo/zh-Hans/index.html">
+<link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/index.html"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/index.html"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/index.html"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/index.html"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/index.html"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/index.html">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css?v=f3aae287">
+<script>window.SHOO_LOCALE='zh-Hans';window.SHOO_PAGE='index.html';</script>
+<script defer src="../assets/site.js?v=f3aae287"></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="../zh-Hans/index.html"><img src="../assets/icon.png" alt=""><span>Shoo</span></a>
+<nav class="nav-links" aria-label="主菜单"><a href="../zh-Hans/index.html" aria-current="page">首页</a><a href="../zh-Hans/support.html">支持</a><a href="../zh-Hans/privacy.html">隐私</a></nav>
+<label><span class="sr-only">语言</span><select class="lang" id="language" aria-label="语言"><option value="en">English</option><option value="zh-Hant">繁體中文</option><option value="zh-Hans" selected>简体中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="th">ไทย</option></select></label>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<p class="eyebrow">贴在 Mac 桌面上的贴纸本子</p>
+<h1>点一下贴纸，<span class="accent">窗口统统藏起来。</span></h1>
+<p class="lead">把 Shoo 贴在桌面上，告诉它要管哪些 App 或窗口。点一下全部藏起来，再点一下，全部回到原来的位置。</p>
+<span class="button soon" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.67zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>即将登陆 Mac App Store</span>
+<p class="button-note">免费下载 · macOS 14 及以上</p>
+</div>
+<div class="sticker-board" aria-hidden="true">
+<div class="note"></div><div class="tape"></div>
+<img class="s-mug" src="../assets/sticker-mug.png" alt="">
+<img class="s-moon" src="../assets/sticker-moon.png" alt="">
+<img class="s-tv" src="../assets/sticker-tv.png" alt="">
+<img class="s-cactus" src="../assets/sticker-cactus.png" alt="">
+<img class="s-devil" src="../assets/sticker-shoo.png" alt="">
+<span class="bubble">Shoo!</span>
+</div>
+</div></section>
+<section id="demo"><div class="wrap">
+<h2>点一下，桌面就干净了。</h2>
+<p class="section-lead">试试看：选一个场景，再点一下小恶魔。</p>
+<div class="demo" data-demo>
+<div class="demo-tabs" role="group" aria-label="选一个场景"></div>
+<div class="demo-screen">
+<button class="demo-sticker" type="button"><img src="../assets/sticker-shoo.png" alt=""></button>
+<span class="demo-bubble" aria-hidden="true">Shoo!</span>
+<span class="demo-hint">点我！</span>
+</div>
+<p class="demo-caption" aria-live="polite"></p>
+</div>
+<script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "第三季度报表.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "提案演示.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "网购 — 购物车 (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "信息 — 周末去哪玩 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "音乐 — 正在播放", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "照片 — 旅行", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "凌乱的桌面", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "开了六个窗口，桌面还堆满文件。点一下小恶魔。", "after": "点一下：桌面干干净净。再点一下，全部回到原来的位置。"}, {"name": "有人走过来", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "购物、聊天、听歌……有人朝你走过来了。", "after": "屏幕上只剩工作。等人走了再点一下。"}, {"name": "开会共享屏幕", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "要在会议里共享屏幕了？", "after": "只剩你的演示文稿——不会弹出聊天，也看不到凌乱的桌面。"}], "icons": [["folder", "未命名文件夹"], ["doc", "发票_最终版v3.pdf"], ["pic", "截图 2026.png"], ["folder", "旧东西"], ["doc", "待办 (1).txt"], ["pic", "梗图.jpg"], ["folder", "2025 报税"], ["doc", "笔记.txt"]], "labels": {"shoo": "点一下把窗口赶走", "bringBack": "点一下把窗口叫回来"}}</script>
+<script defer src="../assets/demo.js?v=f3aae287"></script>
+</div></section>
+<section id="yours"><div class="wrap">
+<h2>做成你自己的</h2>
+<p class="section-lead">任何照片都能做成贴纸——你的狗、你的朋友、你最爱的梗图——再让每一张负责不同的事。</p>
+<div class="yours">
+<img class="shot" src="../assets/shots/zh-Hans-memes.png" alt="放了照片贴纸的 Shoo 贴纸本子" loading="lazy">
+<div><div class="stack" aria-hidden="true"><img src="../assets/meme-chill.png" alt=""><img src="../assets/meme-cat.png" alt=""><img src="../assets/meme-pup.png" alt=""></div><ul class="plan-list"><li>把照片拖进来，Shoo 在你的 Mac 上直接抠图</li><li>用自己的分类标签和颜色整理贴纸</li><li>每张贴纸藏自己那一组窗口</li></ul></div>
+</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<h2>怎么用</h2>
+<p class="section-lead">三个步骤，没有设置界面。</p>
+<div class="steps"><div class="paper-card"><span class="step-num">1</span><h3>撕一张贴纸</h3><p>从本子把贴纸拖出来，贴在桌面任何地方。</p></div><div class="paper-card"><span class="step-num">2</span><h3>指给它看</h3><p>选“挑窗口…”，点一下这张贴纸要管的窗口或 App。</p></div><div class="paper-card"><span class="step-num">3</span><h3>点一下，Shoo！</h3><p>点贴纸全部藏起来，再点一下叫回来。</p></div></div>
+</div></section>
+
+
+
+<section id="features"><div class="wrap">
+<h2>用起来顺手的小细节</h2>
+<p class="section-lead">所有事都在你的 Mac 上、在本子里完成。</p>
+<ul class="features"><li><span class="icon" aria-hidden="true">🪟</span><div><b>单个窗口或整个 App</b><span>Safari、Chrome、备忘录、访达可以只藏一个窗口，其他 App 整个藏。</span></div></li><li><span class="icon" aria-hidden="true">🖼️</span><div><b>连桌面一起藏</b><span>贴纸生效时，用你自己的壁纸盖住桌面上的文件。</span></div></li><li><span class="icon" aria-hidden="true">🧭</span><div><b>所有桌面或只在当前桌面</b><span>贴纸可以出现在每个桌面，也可以只留在一个。</span></div></li><li><span class="icon" aria-hidden="true">✂️</span><div><b>在本子里直接改</b><span>改名、调大小、旋转、镜像，都在看得到的地方。</span></div></li><li><span class="icon" aria-hidden="true">🙈</span><div><b>不占地方</b><span>Shoo 可以显示在程序坞、菜单栏，或都不显示。</span></div></li><li><span class="icon" aria-hidden="true">🌏</span><div><b>六种语言</b><span>English、繁體中文、简体中文、日本語、한국어、ไทย。</span></div></li></ul>
+</div></section>
+
+<section id="price"><div class="wrap">
+<h2>免费开始</h2>
+<p class="section-lead">小恶魔免费送你，所有功能都能用。其他的一次买断，无需订阅。</p>
+<div class="plans">
+<div class="paper-card plan"><h3><img src="../assets/sticker-shoo.png" alt="">免费</h3><p class="price">红色小恶魔</p><ul><li>一张贴纸就有全部功能</li><li>藏窗口、藏 App、连桌面一起藏</li><li>所有语言</li></ul></div>
+<div class="paper-card plan full"><h3><img src="../assets/sticker-dou.png" alt="">解锁完整版</h3><p class="price">一次买断</p><ul><li>另外 5 款手绘贴纸</li><li>用自己的照片做贴纸</li><li>自定义分类标签和颜色</li><li>想做几张就做几张</li></ul></div>
+</div>
+</div></section>
+
+<section id="privacy"><div class="wrap">
+<div class="privacy-box"><img src="../assets/sticker-cactus.png" alt="">
+<div><h2>你的桌面还是你的</h2><ul><li>无需账号、没有广告、不追踪</li><li>贴纸和设置只存在你的 Mac 上</li><li>照片在你的 Mac 上抠图，不会上传</li><li>Shoo 只会藏起或叫回你指定的窗口，不会读取里面的内容</li></ul>
+<p><a href="../zh-Hans/privacy.html">查看隐私政策</a></p></div></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>常见问题</h2>
+<details><summary>为什么 macOS 会问要不要让 Shoo 控制 Safari、Chrome、备忘录或访达？</summary><p>这是 Shoo 只藏那个 App 某一个窗口的方法。Shoo 只会让那个 App 把你指定的窗口藏起来或叫回来。如果你选不允许，Shoo 会改为整个 App 一起藏。</p></details><details><summary>任何 App 都能藏吗？</summary><p>可以。任何 App 都能整个藏起来；只藏单个窗口目前支持 Safari、Chrome、备忘录、访达。</p></details><details><summary>需要订阅吗？</summary><p>不需要。Shoo 免费，附小恶魔贴纸；解锁全部是一次买断。</p></details>
+<p><a href="../zh-Hans/support.html">更多帮助与联系方式</a></p>
+</div></section>
+</main>
+<footer><div class="wrap footer-row">
+<span>© 2026 Sona Orbit</span><span class="spacer"></span>
+<a href="../zh-Hans/support.html">支持</a>
+<a href="../zh-Hans/privacy.html">隐私</a>
+<a href="mailto:sona.orbit.hi@gmail.com">sona.orbit.hi@gmail.com</a>
+</div></footer>
+</body>
+</html>
