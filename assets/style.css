@@ -301,3 +301,5 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
 .hero-text, .site-header .nav-links, .site-header label, .site-header, main > section, body > footer { transition: opacity .35s ease, transform .45s cubic-bezier(.5,0,.3,1), translate .35s ease, visibility 0s; }
 .board-away { transition: opacity .3s ease, translate .35s ease, visibility 0s linear .35s !important; }
 @media (prefers-reduced-motion: reduce) { .board-pop { animation-duration: .01s; } }
+
+.store-badge{display:inline-block;line-height:0}.store-badge img{height:48px;width:auto}
