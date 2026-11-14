@@ -5,6 +5,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/\/releases\/.*\/download\/|\.dmg(\?|$)|apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/shoo/*"},{"not":{"selector_matches":"[download],[target=_blank],.no-prerender"}}]},"eagerness":"moderate"}]}</script>
 <title>Shoo! 스티커 수첩 — 스티커를 누르면 창이 숨어요</title>
 <meta name="description" content="Shoo는 Mac 바탕화면에 붙이는 손그림 스티커 수첩이에요. 스티커를 누르면 골라 둔 창이 숨고, 다시 누르면 돌아와요.">
 <meta property="og:type" content="website">
@@ -15,13 +19,14 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
-<link rel="stylesheet" href="../assets/style.css?v=e50c6709">
+<link rel="stylesheet" href="../assets/style.css?v=4729e72e">
 <script>window.SHOO_LOCALE='ko';window.SHOO_PAGE='';window.SHOO_ROOT='../';</script>
-<script defer src="../assets/site.js?v=e50c6709"></script>
+<script defer src="../assets/site.js?v=4729e72e"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Shoo", "description": "Shoo는 Mac 바탕화면에 붙이는 손그림 스티커 수첩이에요. 스티커를 누르면 골라 둔 창이 숨고, 다시 누르면 돌아와요.", "operatingSystem": "macOS", "applicationCategory": "UtilitiesApplication", "url": "https://sona-orbit.github.io/shoo/ko/", "image": "https://sona-orbit.github.io/shoo/assets/icon.png", "inLanguage": "ko", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Sona Orbit"}}</script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
-<a class="brand" href="../ko/"><img src="../assets/icon.png" alt=""><span>Shoo</span></a>
+<a class="brand" href="../ko/"><img src="../assets/icon-192.webp" alt="" width="192" height="192"><span>Shoo</span></a>
 <nav class="nav-links" aria-label="메인"><a href="../ko/" aria-current="page">홈</a><a href="../ko/support/">지원</a><a href="../ko/privacy/">개인정보</a></nav>
 <label><span class="sr-only">언어</span><select class="lang" id="language" aria-label="언어"><option value="en">English</option><option value="zh-Hant">繁體中文</option><option value="zh-Hans">简体中文</option><option value="ja">日本語</option><option value="ko" selected>한국어</option><option value="th">ไทย</option></select></label>
 </div></header>
@@ -37,11 +42,11 @@
 <div class="board-wrap">
 <div class="sticker-board" aria-hidden="true">
 <div class="note"></div><div class="tape"></div>
-<img class="s-mug" src="../assets/sticker-mug.png" alt="">
-<img class="s-moon" src="../assets/sticker-moon.png" alt="">
-<img class="s-tv" src="../assets/sticker-tv.png" alt="">
-<img class="s-cactus" src="../assets/sticker-cactus.png" alt="">
-<img class="s-devil" src="../assets/sticker-shoo.png" alt="">
+<img class="s-mug" src="../assets/sticker-mug.webp" alt="" width="576" height="576">
+<img class="s-moon" src="../assets/sticker-moon.webp" alt="" width="576" height="576">
+<img class="s-tv" src="../assets/sticker-tv.webp" alt="" width="576" height="576">
+<img class="s-cactus" src="../assets/sticker-cactus.webp" alt="" width="576" height="576">
+<img class="s-devil" src="../assets/sticker-shoo.webp" alt="" width="576" height="576" fetchpriority="high">
 <span class="bubble">Shoo!</span>
 <span class="board-tip"></span>
 </div>
@@ -55,29 +60,29 @@
 <div class="demo" data-demo>
 <div class="demo-tabs" role="group" aria-label="상황 고르기"></div>
 <div class="demo-screen">
-<button class="demo-sticker" type="button"><img src="../assets/sticker-shoo.png" alt=""></button>
+<button class="demo-sticker" type="button"><img src="../assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async"></button>
 <span class="demo-bubble" aria-hidden="true">Shoo!</span>
 <span class="demo-hint">눌러 봐!</span>
 </div>
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "분기 보고서.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "제안 발표.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "온라인 쇼핑 — 장바구니 (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "메시지 — 주말 계획 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "음악 — 재생 중", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "사진 — 여행", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "어지러운 바탕화면", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "창이 여섯 개, 파일은 산더미. 작은 악마를 눌러요.", "after": "한 번 누르면 깨끗해져요. 다시 누르면 모두 원래 자리로 돌아와요."}, {"name": "누가 다가올 때", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "쇼핑, 채팅, 음악… 누군가 다가오고 있어요.", "after": "화면엔 일만 남았어요. 지나가면 다시 누르세요."}, {"name": "회의 중 화면 공유", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "회의에서 화면을 공유하려고요?", "after": "발표 자료만 남아요. 채팅 알림도, 어지러운 바탕화면도 안 보여요."}], "icons": [["folder", "이름 없는 폴더"], ["doc", "청구서_최종v3.pdf"], ["pic", "스크린샷 2026.png"], ["folder", "옛날 것"], ["doc", "할 일 (1).txt"], ["pic", "밈.jpg"], ["folder", "2025 세금"], ["doc", "메모.txt"]], "labels": {"shoo": "눌러서 창 쫓아내기", "bringBack": "눌러서 창 불러오기"}}</script>
-<script defer src="../assets/demo.js?v=e50c6709"></script>
+<script defer src="../assets/demo.js?v=4729e72e"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>나만의 스티커로</h2>
 <p class="section-lead">어떤 사진이든 스티커로 — 우리 강아지, 친구, 좋아하는 밈까지. 스티커마다 다른 일을 맡겨요.</p>
 <div class="yours" data-drop>
-<div class="drop-book" role="img" aria-label="스티커 수첩"><img class="drop-state" src="../assets/drop/ko-0.webp" alt="" width="1800" height="1182"><img class="drop-state next" alt="" width="1800" height="1182"></div>
+<div class="drop-book" role="img" aria-label="스티커 수첩"><img class="drop-state" src="../assets/drop/ko-0.webp" alt="" width="1800" height="1182" loading="lazy" decoding="async"><img class="drop-state next" alt="" width="1800" height="1182"></div>
 <div class="drop-side">
-<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/chill-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="pup" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/pup-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="cat" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/cat-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="dou" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/dou-photo.jpg" alt="" draggable="false"></button></div>
+<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/chill-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="pup" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/pup-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="cat" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/cat-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="dou" aria-label="이 사진으로 스티커 만들기"><img src="../assets/drop/dou-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button></div>
 <p class="drop-hint" aria-live="polite"><b>사진을 수첩으로 끌어다 놓기</b><span>또는 사진을 눌러도 돼요</span></p>
 <button class="drop-reset" type="button" hidden>다시 하기</button>
 <ul class="plan-list"><li>사진을 끌어다 놓으면 Mac 안에서 바로 배경 제거</li><li>나만의 탭과 색으로 정리</li><li>스티커마다 숨길 창 묶음이 따로</li></ul>
 </div>
 </div>
-<script type="application/json" id="drop-data">{"states": ["../assets/drop/ko-0.webp", "../assets/drop/ko-1.webp", "../assets/drop/ko-2.webp", "../assets/drop/ko-3.webp", "../assets/drop/ko-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.png", "cat": "../assets/drop/cat-sticker.png", "pup": "../assets/drop/pup-sticker.png", "chill": "../assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "사진을 수첩으로 끌어다 놓기", "done": "네 장 모두 스티커가 됐어요.", "out": "완성된 스티커를 수첩 밖으로 끌어내 아무 데나 두기", "sticker": "이 스티커를 수첩 밖으로 끌어내기"}</script>
-<script defer src="../assets/drop.js?v=e50c6709"></script>
+<script type="application/json" id="drop-data">{"states": ["../assets/drop/ko-0.webp", "../assets/drop/ko-1.webp", "../assets/drop/ko-2.webp", "../assets/drop/ko-3.webp", "../assets/drop/ko-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.webp", "cat": "../assets/drop/cat-sticker.webp", "pup": "../assets/drop/pup-sticker.webp", "chill": "../assets/drop/chill-sticker.webp"}, "order": ["dou", "cat", "pup", "chill"], "hint": "사진을 수첩으로 끌어다 놓기", "done": "네 장 모두 스티커가 됐어요.", "out": "완성된 스티커를 수첩 밖으로 끌어내 아무 데나 두기", "sticker": "이 스티커를 수첩 밖으로 끌어내기"}</script>
+<script defer src="../assets/drop.js?v=4729e72e"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -98,13 +103,13 @@
 <h2>무료로 시작</h2>
 <p class="section-lead">작은 악마는 무료, 모든 기능 포함. 나머지는 한 번 구입으로 열려요. 구독 없음.</p>
 <div class="plans">
-<div class="paper-card plan"><h3><img src="../assets/sticker-shoo.png" alt="">무료</h3><p class="price">빨간 작은 악마</p><ul><li>스티커 한 장으로 모든 기능</li><li>창, 앱, 바탕화면 숨기기</li><li>모든 언어</li></ul></div>
-<div class="paper-card plan full"><h3><img src="../assets/sticker-dou.png" alt="">전체 기능 열기</h3><p class="price">한 번 구입</p><ul><li>손그림 스티커 5종 추가</li><li>내 사진으로 스티커 만들기</li><li>나만의 분류 탭과 색</li><li>스티커는 원하는 만큼</li></ul></div>
+<div class="paper-card plan"><h3><img src="../assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async">무료</h3><p class="price">빨간 작은 악마</p><ul><li>스티커 한 장으로 모든 기능</li><li>창, 앱, 바탕화면 숨기기</li><li>모든 언어</li></ul></div>
+<div class="paper-card plan full"><h3><img src="../assets/sticker-dou.webp" alt="" width="376" height="500" loading="lazy" decoding="async">전체 기능 열기</h3><p class="price">한 번 구입</p><ul><li>손그림 스티커 5종 추가</li><li>내 사진으로 스티커 만들기</li><li>나만의 분류 탭과 색</li><li>스티커는 원하는 만큼</li></ul></div>
 </div>
 </div></section>
 
 <section id="privacy"><div class="wrap">
-<div class="privacy-box"><img src="../assets/sticker-cactus.png" alt="">
+<div class="privacy-box"><img src="../assets/sticker-cactus.webp" alt="" width="576" height="576" loading="lazy" decoding="async">
 <div><h2>내 책상은 내 것</h2><ul><li>계정 없음, 광고 없음, 추적 없음</li><li>스티커와 설정은 내 Mac에만 저장</li><li>사진 배경 제거는 Mac 안에서, 업로드 없음</li><li>Shoo는 고른 창을 숨기고 불러오기만 할 뿐, 내용은 읽지 않아요</li></ul>
 <p><a href="../ko/privacy/">개인정보 처리방침 보기</a></p></div></div>
 </div></section>
@@ -117,7 +122,7 @@
 </main>
 <div class="moon-shoo" data-moon>
 <span class="moon-hint" aria-hidden="true">눌러 보세요, 이 페이지가 통째로 사라져요!</span>
-<button class="moon-btn" type="button" aria-pressed="false" aria-label="페이지 전체 치우기"><img src="../assets/sticker-moon.png" alt=""></button>
+<button class="moon-btn" type="button" aria-pressed="false" aria-label="페이지 전체 치우기"><img src="../assets/sticker-moon.webp" alt="" width="576" height="576"></button>
 <span class="moon-bubble" aria-hidden="true">Shoo!</span>
 </div>
 <div class="moon-gone" aria-live="polite" hidden>
@@ -126,8 +131,8 @@
 <button class="button moon-back" type="button">다시 불러오기</button>
 <p class="moon-tip">달을 한 번 더 누르거나 Esc를 눌러도 돼요.</p></div>
 </div>
-<script type="application/json" id="moon-data">{"shoo": "페이지 전체 치우기", "bring": "페이지 다시 불러오기", "stickers": ["../assets/sticker-shoo.png", "../assets/sticker-mug.png", "../assets/sticker-moon.png", "../assets/sticker-tv.png", "../assets/sticker-plane.png", "../assets/sticker-cactus.png"]}</script>
-<script defer src="../assets/moon.js?v=e50c6709"></script>
+<script type="application/json" id="moon-data">{"shoo": "페이지 전체 치우기", "bring": "페이지 다시 불러오기", "stickers": ["../assets/sticker-shoo.webp", "../assets/sticker-mug.webp", "../assets/sticker-moon.webp", "../assets/sticker-tv.webp", "../assets/sticker-plane.webp", "../assets/sticker-cactus.webp"]}</script>
+<script defer src="../assets/moon.js?v=4729e72e"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="../ko/support/">지원</a>

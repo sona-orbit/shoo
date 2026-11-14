@@ -5,6 +5,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/\/releases\/.*\/download\/|\.dmg(\?|$)|apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/shoo/*"},{"not":{"selector_matches":"[download],[target=_blank],.no-prerender"}}]},"eagerness":"moderate"}]}</script>
 <title>Shoo! ステッカー手帳 — クリックでウインドウが消える</title>
 <meta name="description" content="ShooはMacのデスクトップに貼る手描きステッカー手帳。ステッカーをクリックすると選んだウインドウが消え、もう一度で元どおり。">
 <meta property="og:type" content="website">
@@ -15,13 +19,14 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" href="../assets/icon.png">
-<link rel="stylesheet" href="../assets/style.css?v=e50c6709">
+<link rel="stylesheet" href="../assets/style.css?v=4729e72e">
 <script>window.SHOO_LOCALE='ja';window.SHOO_PAGE='';window.SHOO_ROOT='../';</script>
-<script defer src="../assets/site.js?v=e50c6709"></script>
+<script defer src="../assets/site.js?v=4729e72e"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Shoo", "description": "ShooはMacのデスクトップに貼る手描きステッカー手帳。ステッカーをクリックすると選んだウインドウが消え、もう一度で元どおり。", "operatingSystem": "macOS", "applicationCategory": "UtilitiesApplication", "url": "https://sona-orbit.github.io/shoo/ja/", "image": "https://sona-orbit.github.io/shoo/assets/icon.png", "inLanguage": "ja", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Sona Orbit"}}</script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
-<a class="brand" href="../ja/"><img src="../assets/icon.png" alt=""><span>Shoo</span></a>
+<a class="brand" href="../ja/"><img src="../assets/icon-192.webp" alt="" width="192" height="192"><span>Shoo</span></a>
 <nav class="nav-links" aria-label="メイン"><a href="../ja/" aria-current="page">ホーム</a><a href="../ja/support/">サポート</a><a href="../ja/privacy/">プライバシー</a></nav>
 <label><span class="sr-only">言語</span><select class="lang" id="language" aria-label="言語"><option value="en">English</option><option value="zh-Hant">繁體中文</option><option value="zh-Hans">简体中文</option><option value="ja" selected>日本語</option><option value="ko">한국어</option><option value="th">ไทย</option></select></label>
 </div></header>
@@ -37,11 +42,11 @@
 <div class="board-wrap">
 <div class="sticker-board" aria-hidden="true">
 <div class="note"></div><div class="tape"></div>
-<img class="s-mug" src="../assets/sticker-mug.png" alt="">
-<img class="s-moon" src="../assets/sticker-moon.png" alt="">
-<img class="s-tv" src="../assets/sticker-tv.png" alt="">
-<img class="s-cactus" src="../assets/sticker-cactus.png" alt="">
-<img class="s-devil" src="../assets/sticker-shoo.png" alt="">
+<img class="s-mug" src="../assets/sticker-mug.webp" alt="" width="576" height="576">
+<img class="s-moon" src="../assets/sticker-moon.webp" alt="" width="576" height="576">
+<img class="s-tv" src="../assets/sticker-tv.webp" alt="" width="576" height="576">
+<img class="s-cactus" src="../assets/sticker-cactus.webp" alt="" width="576" height="576">
+<img class="s-devil" src="../assets/sticker-shoo.webp" alt="" width="576" height="576" fetchpriority="high">
 <span class="bubble">Shoo!</span>
 <span class="board-tip"></span>
 </div>
@@ -55,29 +60,29 @@
 <div class="demo" data-demo>
 <div class="demo-tabs" role="group" aria-label="場面を選ぶ"></div>
 <div class="demo-screen">
-<button class="demo-sticker" type="button"><img src="../assets/sticker-shoo.png" alt=""></button>
+<button class="demo-sticker" type="button"><img src="../assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async"></button>
 <span class="demo-bubble" aria-hidden="true">Shoo!</span>
 <span class="demo-hint">クリック！</span>
 </div>
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "四半期レポート.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "提案資料.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "ネットショッピング — カート (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "メッセージ — 週末の予定 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "ミュージック — 再生中", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "写真 — 旅行", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "散らかったデスクトップ", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "ウインドウが6つ、ファイルも山積み。小さな悪魔をクリック。", "after": "ワンクリックで、すっきり。もう一度クリックすれば、すべて元の場所に戻ります。"}, {"name": "誰かが近づいてきた", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "買い物、チャット、音楽……誰かがこっちに来る。", "after": "画面には仕事だけ。いなくなったら、もう一度クリック。"}, {"name": "会議で画面共有", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "これから会議で画面を共有する？", "after": "スライドだけ。チャットも、散らかったデスクトップも見えません。"}], "icons": [["folder", "名称未設定フォルダ"], ["doc", "請求書_最終v3.pdf"], ["pic", "スクリーンショット.png"], ["folder", "古いもの"], ["doc", "やること (1).txt"], ["pic", "ミーム.jpg"], ["folder", "確定申告 2025"], ["doc", "メモ.txt"]], "labels": {"shoo": "クリックでウインドウを追い払う", "bringBack": "クリックでウインドウを呼び戻す"}}</script>
-<script defer src="../assets/demo.js?v=e50c6709"></script>
+<script defer src="../assets/demo.js?v=4729e72e"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>自分だけのステッカーに</h2>
 <p class="section-lead">どんな写真もステッカーに——うちの犬、友だち、お気に入りのミーム。1枚ずつに別の役目を。</p>
 <div class="yours" data-drop>
-<div class="drop-book" role="img" aria-label="ステッカー手帳"><img class="drop-state" src="../assets/drop/ja-0.webp" alt="" width="1800" height="1182"><img class="drop-state next" alt="" width="1800" height="1182"></div>
+<div class="drop-book" role="img" aria-label="ステッカー手帳"><img class="drop-state" src="../assets/drop/ja-0.webp" alt="" width="1800" height="1182" loading="lazy" decoding="async"><img class="drop-state next" alt="" width="1800" height="1182"></div>
 <div class="drop-side">
-<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="この写真をステッカーにする"><img src="../assets/drop/chill-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="pup" aria-label="この写真をステッカーにする"><img src="../assets/drop/pup-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="cat" aria-label="この写真をステッカーにする"><img src="../assets/drop/cat-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="dou" aria-label="この写真をステッカーにする"><img src="../assets/drop/dou-photo.jpg" alt="" draggable="false"></button></div>
+<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="この写真をステッカーにする"><img src="../assets/drop/chill-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="pup" aria-label="この写真をステッカーにする"><img src="../assets/drop/pup-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="cat" aria-label="この写真をステッカーにする"><img src="../assets/drop/cat-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="dou" aria-label="この写真をステッカーにする"><img src="../assets/drop/dou-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button></div>
 <p class="drop-hint" aria-live="polite"><b>写真を手帳にドラッグ</b><span>クリックするだけでもOK</span></p>
 <button class="drop-reset" type="button" hidden>もう一度</button>
 <ul class="plan-list"><li>写真をドロップすると、Macの中で切り抜き</li><li>自分だけのタブと色で整理</li><li>ステッカーごとに隠すウインドウを決められる</li></ul>
 </div>
 </div>
-<script type="application/json" id="drop-data">{"states": ["../assets/drop/ja-0.webp", "../assets/drop/ja-1.webp", "../assets/drop/ja-2.webp", "../assets/drop/ja-3.webp", "../assets/drop/ja-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.png", "cat": "../assets/drop/cat-sticker.png", "pup": "../assets/drop/pup-sticker.png", "chill": "../assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "写真を手帳にドラッグ", "done": "4枚ともステッカーになりました。", "out": "できたステッカーを手帳から出して、好きな場所へ", "sticker": "このステッカーを手帳から出す"}</script>
-<script defer src="../assets/drop.js?v=e50c6709"></script>
+<script type="application/json" id="drop-data">{"states": ["../assets/drop/ja-0.webp", "../assets/drop/ja-1.webp", "../assets/drop/ja-2.webp", "../assets/drop/ja-3.webp", "../assets/drop/ja-4.webp"], "stickers": {"dou": "../assets/drop/dou-sticker.webp", "cat": "../assets/drop/cat-sticker.webp", "pup": "../assets/drop/pup-sticker.webp", "chill": "../assets/drop/chill-sticker.webp"}, "order": ["dou", "cat", "pup", "chill"], "hint": "写真を手帳にドラッグ", "done": "4枚ともステッカーになりました。", "out": "できたステッカーを手帳から出して、好きな場所へ", "sticker": "このステッカーを手帳から出す"}</script>
+<script defer src="../assets/drop.js?v=4729e72e"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -98,13 +103,13 @@
 <h2>無料ではじめる</h2>
 <p class="section-lead">小さな悪魔は無料で、全機能つき。ほかは買い切りで解放。サブスクリプションはありません。</p>
 <div class="plans">
-<div class="paper-card plan"><h3><img src="../assets/sticker-shoo.png" alt="">無料</h3><p class="price">赤い小さな悪魔</p><ul><li>1枚のステッカーで全機能</li><li>ウインドウ・アプリ・デスクトップを隠す</li><li>すべての言語</li></ul></div>
-<div class="paper-card plan full"><h3><img src="../assets/sticker-dou.png" alt="">すべてを解放</h3><p class="price">買い切り</p><ul><li>手描きステッカーがあと5種類</li><li>自分の写真からステッカーを作成</li><li>自分だけのカテゴリタブと色</li><li>ステッカーは何枚でも</li></ul></div>
+<div class="paper-card plan"><h3><img src="../assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async">無料</h3><p class="price">赤い小さな悪魔</p><ul><li>1枚のステッカーで全機能</li><li>ウインドウ・アプリ・デスクトップを隠す</li><li>すべての言語</li></ul></div>
+<div class="paper-card plan full"><h3><img src="../assets/sticker-dou.webp" alt="" width="376" height="500" loading="lazy" decoding="async">すべてを解放</h3><p class="price">買い切り</p><ul><li>手描きステッカーがあと5種類</li><li>自分の写真からステッカーを作成</li><li>自分だけのカテゴリタブと色</li><li>ステッカーは何枚でも</li></ul></div>
 </div>
 </div></section>
 
 <section id="privacy"><div class="wrap">
-<div class="privacy-box"><img src="../assets/sticker-cactus.png" alt="">
+<div class="privacy-box"><img src="../assets/sticker-cactus.webp" alt="" width="576" height="576" loading="lazy" decoding="async">
 <div><h2>あなたのデスクはあなたのもの</h2><ul><li>アカウント不要、広告なし、トラッキングなし</li><li>ステッカーと設定はあなたのMacの中だけ</li><li>写真の切り抜きはMacの中で。アップロードなし</li><li>Shooは選んだウインドウを隠したり戻したりするだけで、中身は読みません</li></ul>
 <p><a href="../ja/privacy/">プライバシーポリシーを読む</a></p></div></div>
 </div></section>
@@ -117,7 +122,7 @@
 </main>
 <div class="moon-shoo" data-moon>
 <span class="moon-hint" aria-hidden="true">クリックで、このページごと消える！</span>
-<button class="moon-btn" type="button" aria-pressed="false" aria-label="ページ全体を消す"><img src="../assets/sticker-moon.png" alt=""></button>
+<button class="moon-btn" type="button" aria-pressed="false" aria-label="ページ全体を消す"><img src="../assets/sticker-moon.webp" alt="" width="576" height="576"></button>
 <span class="moon-bubble" aria-hidden="true">Shoo!</span>
 </div>
 <div class="moon-gone" aria-live="polite" hidden>
@@ -126,8 +131,8 @@
 <button class="button moon-back" type="button">元に戻す</button>
 <p class="moon-tip">月をもう一度クリック、または Esc でも戻ります。</p></div>
 </div>
-<script type="application/json" id="moon-data">{"shoo": "ページ全体を消す", "bring": "ページを戻す", "stickers": ["../assets/sticker-shoo.png", "../assets/sticker-mug.png", "../assets/sticker-moon.png", "../assets/sticker-tv.png", "../assets/sticker-plane.png", "../assets/sticker-cactus.png"]}</script>
-<script defer src="../assets/moon.js?v=e50c6709"></script>
+<script type="application/json" id="moon-data">{"shoo": "ページ全体を消す", "bring": "ページを戻す", "stickers": ["../assets/sticker-shoo.webp", "../assets/sticker-mug.webp", "../assets/sticker-moon.webp", "../assets/sticker-tv.webp", "../assets/sticker-plane.webp", "../assets/sticker-cactus.webp"]}</script>
+<script defer src="../assets/moon.js?v=4729e72e"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="../ja/support/">サポート</a>

@@ -5,6 +5,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/\/releases\/.*\/download\/|\.dmg(\?|$)|apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
+<meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/shoo/*"},{"not":{"selector_matches":"[download],[target=_blank],.no-prerender"}}]},"eagerness":"moderate"}]}</script>
 <title>Shoo! Stickers — click a sticker, windows shoo away</title>
 <meta name="description" content="Shoo is a hand-drawn sticker book for your Mac desktop. Click a sticker and the windows you picked disappear. Click again and they’re back.">
 <meta property="og:type" content="website">
@@ -15,13 +19,14 @@
 <link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/"><link rel="alternate" hreflang="ja" href="https://sona-orbit.github.io/shoo/ja/"><link rel="alternate" hreflang="ko" href="https://sona-orbit.github.io/shoo/ko/"><link rel="alternate" hreflang="th" href="https://sona-orbit.github.io/shoo/th/">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
-<link rel="stylesheet" href="assets/style.css?v=e50c6709">
+<link rel="stylesheet" href="assets/style.css?v=4729e72e">
 <script>window.SHOO_LOCALE='en';window.SHOO_PAGE='';window.SHOO_ROOT='';</script>
-<script defer src="assets/site.js?v=e50c6709"></script>
+<script defer src="assets/site.js?v=4729e72e"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Shoo", "description": "Shoo is a hand-drawn sticker book for your Mac desktop. Click a sticker and the windows you picked disappear. Click again and they’re back.", "operatingSystem": "macOS", "applicationCategory": "UtilitiesApplication", "url": "https://sona-orbit.github.io/shoo/", "image": "https://sona-orbit.github.io/shoo/assets/icon.png", "inLanguage": "en", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Sona Orbit"}}</script>
 </head>
 <body>
 <header class="site-header"><div class="wrap nav">
-<a class="brand" href="./"><img src="assets/icon.png" alt=""><span>Shoo</span></a>
+<a class="brand" href="./"><img src="assets/icon-192.webp" alt="" width="192" height="192"><span>Shoo</span></a>
 <nav class="nav-links" aria-label="Main"><a href="./" aria-current="page">Home</a><a href="support/">Support</a><a href="privacy/">Privacy</a></nav>
 <label><span class="sr-only">Language</span><select class="lang" id="language" aria-label="Language"><option value="en" selected>English</option><option value="zh-Hant">繁體中文</option><option value="zh-Hans">简体中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="th">ไทย</option></select></label>
 </div></header>
@@ -37,11 +42,11 @@
 <div class="board-wrap">
 <div class="sticker-board" aria-hidden="true">
 <div class="note"></div><div class="tape"></div>
-<img class="s-mug" src="assets/sticker-mug.png" alt="">
-<img class="s-moon" src="assets/sticker-moon.png" alt="">
-<img class="s-tv" src="assets/sticker-tv.png" alt="">
-<img class="s-cactus" src="assets/sticker-cactus.png" alt="">
-<img class="s-devil" src="assets/sticker-shoo.png" alt="">
+<img class="s-mug" src="assets/sticker-mug.webp" alt="" width="576" height="576">
+<img class="s-moon" src="assets/sticker-moon.webp" alt="" width="576" height="576">
+<img class="s-tv" src="assets/sticker-tv.webp" alt="" width="576" height="576">
+<img class="s-cactus" src="assets/sticker-cactus.webp" alt="" width="576" height="576">
+<img class="s-devil" src="assets/sticker-shoo.webp" alt="" width="576" height="576" fetchpriority="high">
 <span class="bubble">Shoo!</span>
 <span class="board-tip"></span>
 </div>
@@ -55,29 +60,29 @@
 <div class="demo" data-demo>
 <div class="demo-tabs" role="group" aria-label="Pick a moment"></div>
 <div class="demo-screen">
-<button class="demo-sticker" type="button"><img src="assets/sticker-shoo.png" alt=""></button>
+<button class="demo-sticker" type="button"><img src="assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async"></button>
 <span class="demo-bubble" aria-hidden="true">Shoo!</span>
 <span class="demo-hint">Click me!</span>
 </div>
 <p class="demo-caption" aria-live="polite"></p>
 </div>
 <script type="application/json" id="demo-data">{"windows": [{"id": "sheet", "kind": "sheet", "title": "Quarterly Report.numbers", "x": 7, "y": 9, "w": 46, "h": 44, "z": 1, "lines": 0}, {"id": "slides", "kind": "slides", "title": "Pitch Deck.key", "x": 27, "y": 29, "w": 42, "h": 40, "z": 2, "lines": 4}, {"id": "shop", "kind": "shop", "title": "Online Shopping — Cart (3)", "x": 46, "y": 11, "w": 33, "h": 46, "z": 3, "lines": 6}, {"id": "chat", "kind": "chat", "title": "Messages — Weekend plans 🎉", "x": 21, "y": 47, "w": 30, "h": 38, "z": 4, "lines": 6}, {"id": "music", "kind": "music", "title": "Music — Now Playing", "x": 60, "y": 52, "w": 24, "h": 30, "z": 5, "lines": 3}, {"id": "photos", "kind": "photos", "title": "Photos — Vacation", "x": 41, "y": 58, "w": 28, "h": 31, "z": 6, "lines": 6}], "scenes": [{"name": "Messy desktop", "hide": ["sheet", "slides", "shop", "chat", "music", "photos"], "desktop": true, "before": "Six windows and a pile of files. Click the little devil.", "after": "One click: a clean desk. Click again and everything is back exactly where it was."}, {"name": "Someone walks by", "hide": ["shop", "chat", "music", "photos"], "desktop": false, "before": "Shopping, chatting, music… and someone is walking over.", "after": "Only work is left on screen. Click again when they’re gone."}, {"name": "Sharing your screen", "hide": ["sheet", "shop", "chat", "music", "photos"], "desktop": true, "before": "About to share your screen in a meeting?", "after": "Just your slides — no chats popping up, no messy desktop."}], "icons": [["folder", "Untitled folder"], ["doc", "invoice_final_v3.pdf"], ["pic", "Screenshot 2026.png"], ["folder", "Old stuff"], ["doc", "todo (1).txt"], ["pic", "meme.jpg"], ["folder", "Taxes 2025"], ["doc", "notes.txt"]], "labels": {"shoo": "Click to shoo the windows away", "bringBack": "Click to bring the windows back"}}</script>
-<script defer src="assets/demo.js?v=e50c6709"></script>
+<script defer src="assets/demo.js?v=4729e72e"></script>
 </div></section>
 <section id="yours"><div class="wrap">
 <h2>Make it yours</h2>
 <p class="section-lead">Turn any photo into a sticker — your dog, your friends, your favorite meme — and give each one its own job.</p>
 <div class="yours" data-drop>
-<div class="drop-book" role="img" aria-label="The sticker book"><img class="drop-state" src="assets/drop/en-0.webp" alt="" width="1800" height="1182"><img class="drop-state next" alt="" width="1800" height="1182"></div>
+<div class="drop-book" role="img" aria-label="The sticker book"><img class="drop-state" src="assets/drop/en-0.webp" alt="" width="1800" height="1182" loading="lazy" decoding="async"><img class="drop-state next" alt="" width="1800" height="1182"></div>
 <div class="drop-side">
-<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="Make this photo a sticker"><img src="assets/drop/chill-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="pup" aria-label="Make this photo a sticker"><img src="assets/drop/pup-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="cat" aria-label="Make this photo a sticker"><img src="assets/drop/cat-photo.jpg" alt="" draggable="false"></button><button class="drop-photo" type="button" data-k="dou" aria-label="Make this photo a sticker"><img src="assets/drop/dou-photo.jpg" alt="" draggable="false"></button></div>
+<div class="drop-pile"><button class="drop-photo" type="button" data-k="chill" aria-label="Make this photo a sticker"><img src="assets/drop/chill-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="pup" aria-label="Make this photo a sticker"><img src="assets/drop/pup-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="cat" aria-label="Make this photo a sticker"><img src="assets/drop/cat-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button><button class="drop-photo" type="button" data-k="dou" aria-label="Make this photo a sticker"><img src="assets/drop/dou-photo.jpg" alt="" draggable="false" width="480" height="480" loading="lazy" decoding="async"></button></div>
 <p class="drop-hint" aria-live="polite"><b>Drag a photo into the book</b><span>or just click it</span></p>
 <button class="drop-reset" type="button" hidden>Start over</button>
 <ul class="plan-list"><li>Drop in a photo; Shoo cuts it out right on your Mac</li><li>Sort stickers into your own tabs and colors</li><li>Each sticker hides its own set of windows</li></ul>
 </div>
 </div>
-<script type="application/json" id="drop-data">{"states": ["assets/drop/en-0.webp", "assets/drop/en-1.webp", "assets/drop/en-2.webp", "assets/drop/en-3.webp", "assets/drop/en-4.webp"], "stickers": {"dou": "assets/drop/dou-sticker.png", "cat": "assets/drop/cat-sticker.png", "pup": "assets/drop/pup-sticker.png", "chill": "assets/drop/chill-sticker.png"}, "order": ["dou", "cat", "pup", "chill"], "hint": "Drag a photo into the book", "done": "All four are stickers now.", "out": "Drag the new sticker out of the book and put it anywhere", "sticker": "Drag this sticker out of the book"}</script>
-<script defer src="assets/drop.js?v=e50c6709"></script>
+<script type="application/json" id="drop-data">{"states": ["assets/drop/en-0.webp", "assets/drop/en-1.webp", "assets/drop/en-2.webp", "assets/drop/en-3.webp", "assets/drop/en-4.webp"], "stickers": {"dou": "assets/drop/dou-sticker.webp", "cat": "assets/drop/cat-sticker.webp", "pup": "assets/drop/pup-sticker.webp", "chill": "assets/drop/chill-sticker.webp"}, "order": ["dou", "cat", "pup", "chill"], "hint": "Drag a photo into the book", "done": "All four are stickers now.", "out": "Drag the new sticker out of the book and put it anywhere", "sticker": "Drag this sticker out of the book"}</script>
+<script defer src="assets/drop.js?v=4729e72e"></script>
 </div></section>
 
 <section id="how"><div class="wrap">
@@ -98,13 +103,13 @@
 <h2>Free to start</h2>
 <p class="section-lead">The little devil is yours for free, with every feature. Unlock the rest once — no subscription.</p>
 <div class="plans">
-<div class="paper-card plan"><h3><img src="assets/sticker-shoo.png" alt="">Free</h3><p class="price">The little red devil</p><ul><li>Every feature on one sticker</li><li>Hide windows, apps and desktop items</li><li>All languages</li></ul></div>
-<div class="paper-card plan full"><h3><img src="assets/sticker-dou.png" alt="">Unlock everything</h3><p class="price">One-time purchase</p><ul><li>5 more hand-drawn stickers</li><li>Make stickers from your own photos</li><li>Your own category tabs and colors</li><li>As many stickers as you like</li></ul></div>
+<div class="paper-card plan"><h3><img src="assets/sticker-shoo.webp" alt="" width="576" height="576" loading="lazy" decoding="async">Free</h3><p class="price">The little red devil</p><ul><li>Every feature on one sticker</li><li>Hide windows, apps and desktop items</li><li>All languages</li></ul></div>
+<div class="paper-card plan full"><h3><img src="assets/sticker-dou.webp" alt="" width="376" height="500" loading="lazy" decoding="async">Unlock everything</h3><p class="price">One-time purchase</p><ul><li>5 more hand-drawn stickers</li><li>Make stickers from your own photos</li><li>Your own category tabs and colors</li><li>As many stickers as you like</li></ul></div>
 </div>
 </div></section>
 
 <section id="privacy"><div class="wrap">
-<div class="privacy-box"><img src="assets/sticker-cactus.png" alt="">
+<div class="privacy-box"><img src="assets/sticker-cactus.webp" alt="" width="576" height="576" loading="lazy" decoding="async">
 <div><h2>Your desk stays yours</h2><ul><li>No account, no ads, no tracking</li><li>Stickers and settings stay on your Mac</li><li>Photo cut-outs are made on your Mac — nothing is uploaded</li><li>Shoo only hides and shows the windows you picked; it never reads what’s in them</li></ul>
 <p><a href="privacy/">Read the privacy policy</a></p></div></div>
 </div></section>
@@ -117,7 +122,7 @@
 </main>
 <div class="moon-shoo" data-moon>
 <span class="moon-hint" aria-hidden="true">Click me — shoo this whole page!</span>
-<button class="moon-btn" type="button" aria-pressed="false" aria-label="Shoo this whole page away"><img src="assets/sticker-moon.png" alt=""></button>
+<button class="moon-btn" type="button" aria-pressed="false" aria-label="Shoo this whole page away"><img src="assets/sticker-moon.webp" alt="" width="576" height="576"></button>
 <span class="moon-bubble" aria-hidden="true">Shoo!</span>
 </div>
 <div class="moon-gone" aria-live="polite" hidden>
@@ -126,8 +131,8 @@
 <button class="button moon-back" type="button">Bring it back</button>
 <p class="moon-tip">Or click the moon again, or press Esc.</p></div>
 </div>
-<script type="application/json" id="moon-data">{"shoo": "Shoo this whole page away", "bring": "Bring the page back", "stickers": ["assets/sticker-shoo.png", "assets/sticker-mug.png", "assets/sticker-moon.png", "assets/sticker-tv.png", "assets/sticker-plane.png", "assets/sticker-cactus.png"]}</script>
-<script defer src="assets/moon.js?v=e50c6709"></script>
+<script type="application/json" id="moon-data">{"shoo": "Shoo this whole page away", "bring": "Bring the page back", "stickers": ["assets/sticker-shoo.webp", "assets/sticker-mug.webp", "assets/sticker-moon.webp", "assets/sticker-tv.webp", "assets/sticker-plane.webp", "assets/sticker-cactus.webp"]}</script>
+<script defer src="assets/moon.js?v=4729e72e"></script>
 <footer><div class="wrap footer-row">
 <span>© 2026 Sona Orbit</span><span class="spacer"></span>
 <a href="support/">Support</a>
