@@ -1,0 +1,105 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/shoo/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>Mac 分享屏幕前，怎么把私人窗口和桌面文件藏起来？ | Shoo! 桌面贴纸</title><meta name="description" content="开会要分享 Mac 屏幕，怕聊天窗口、购物车或乱七八糟的桌面被看到？整理 macOS 内建的 4 个做法，以及一键藏起、一键叫回的方法。">
+<link rel="canonical" href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">
+<meta property="og:type" content="article"><meta property="og:title" content="Mac 分享屏幕前，怎么把私人窗口和桌面文件藏起来？"><meta property="og:description" content="开会要分享 Mac 屏幕，怕聊天窗口、购物车或乱七八糟的桌面被看到？整理 macOS 内建的 4 个做法，以及一键藏起、一键叫回的方法。"><meta property="og:url" content="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/"><meta property="og:image" content="https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg">
+<link rel="icon" href="/shoo/assets/favicon.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Mac 分享屏幕前，怎么把私人窗口和桌面文件藏起来？", "description": "开会要分享 Mac 屏幕，怕聊天窗口、购物车或乱七八糟的桌面被看到？整理 macOS 内建的 4 个做法，以及一键藏起、一键叫回的方法。", "inLanguage": "zh-Hans", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "mainEntityOfPage": "https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/", "image": "https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans", "mainEntity": [{"@type": "Question", "name": "藏起来的窗口会被关掉吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。Command-H 和 Shoo 都只是隐藏，App 继续执行，内容不会遗失。"}}, {"@type": "Question", "name": "只分享单一窗口，通知还会被看到吗？", "acceptedAnswer": {"@type": "Answer", "text": "一般不会，因为别人只看得到那个窗口。但如果你分享的是整个屏幕，就建议在“系统设置 › 通知”把分享时的通知关掉。"}}, {"@type": "Question", "name": "为什么 Shoo 有些 App 只能整个藏起来？", "acceptedAnswer": {"@type": "Answer", "text": "目前只有 Safari、Chrome 和备忘录能让 Shoo 单独藏一个窗口；其他 App 会整个 App 一起藏起来。"}}, {"@type": "Question", "name": "Shoo 要钱吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以免费下载，附一张功能完整的小恶魔贴纸。想要更多贴纸、用照片做贴纸和分类，是一次买断，不是订阅。"}}]}</script><style>
+:root{--bg:#faf8f3;--soft:#f3efe6;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#b0330f}
+@media (prefers-color-scheme:dark){:root{--bg:#171b25;--soft:#1f2430;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ff8a6b}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/shoo/zh-Hans/"><img src="/shoo/assets/icon-192.webp" alt="" width="30" height="30">Shoo! 桌面贴纸</a>
+<nav><a href="/shoo/zh-Hans/">首页</a><a class="on" href="/shoo/zh-Hans/blog/">文章</a></nav></header>
+<main><p class="eyebrow">Shoo! 桌面贴纸 · 文章</p><h1>Mac 分享屏幕前，怎么把私人窗口和桌面文件藏起来？</h1><p class="intro">分享屏幕前最保险的顺序是：先关通知、只分享一个窗口、用快捷键藏掉其他 App、再把桌面文件收起来。这些 macOS 都做得到，只是步骤多；如果你天天开会，可以把它们绑在一张贴纸上，按一下全部藏起来，再按一下全部回来。</p><p class="meta"><time datetime="2026-11-16">2026-11-16</time> · 约 5 分钟阅读</p><p class="langs"><a href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/">繁體中文</a><b>简体中文</b><a href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">English</a></p><figure><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.webp" alt="手绘插画：笔电屏幕上只剩一份简报，其他窗口像纸片一样飞走" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>文章目录</strong><ol><li><a href="#part-1">先关掉分享时跳出的通知</a></li><li><a href="#part-2">只分享一个窗口，不分享整个屏幕</a></li><li><a href="#part-3">用快捷键藏起其他 App</a></li><li><a href="#part-4">把桌面上的文件收起来</a></li><li><a href="#part-5">每次都要做一遍？绑在一张贴纸上</a></li><li><a href="#part-6">做法对照表</a></li><li><a href="#part-7">常见问题</a></li></ol></nav><article><p class="blog-note">我是 Sona Orbit，一个人开发 Shoo! 桌面贴纸的独立开发者。文中 macOS 的设置与快捷键依 Apple 官方支持文件整理（2026 年 11 月查证）；Shoo 的功能以本站说明为准。</p>
+
+<section id="part-1"><h2>1. 先关掉分享时跳出的通知</h2>
+<p>最容易出事的不是开着的窗口，而是分享到一半跳出来的消息通知。macOS 的“系统设置 › 通知”里，有一项是设置<strong>镜像输出或分享屏幕时要不要显示通知</strong>，选择关闭后，分享期间的通知会先暂停。</p>
+<p>这个设置只要做一次，以后每次分享屏幕都会生效，建议第一个做。</p>
+</section>
+
+<section id="part-2"><h2>2. 只分享一个窗口，不分享整个屏幕</h2>
+<p>大部分视讯会议软件在分享时，都可以选“整个屏幕”或“单一窗口”。只要选单一窗口，其他东西就不会被看到。</p>
+<p>缺点是：讲到一半要切到另一个文件，就得停止分享、重新选一次。很多人为了省事选了整个屏幕，这时候背后开着什么，大家都看得到。</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/share.webp" alt="手绘插画：一个窗口被框起来分享，旁边的其他窗口淡掉" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. 用快捷键藏起其他 App</h2>
+<p>如果要分享整个屏幕，分享前先把不想被看到的 App 藏起来。Apple 官方列出的快捷键：</p>
+<table class="blog-table">
+<thead><tr><th>快捷键</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td>Command-H</td><td>隐藏最前面那个 App 的所有窗口</td></tr>
+<tr><td>Option-Command-H</td><td>只留最前面的 App，其他 App 全部隐藏</td></tr>
+<tr><td>Command-M</td><td>把最前面的窗口缩到 Dock</td></tr>
+<tr><td>Command-Mission Control 或 Fn-F11</td><td>显示桌面（窗口暂时移开）</td></tr>
+</tbody>
+</table>
+<p>Option-Command-H 最快：切到要讲的简报，按一下，其他 App 都藏起来。不过开完会要一个一个点回来，原本的窗口排列也得自己再整理。</p>
+</section>
+
+<section id="part-4"><h2>4. 把桌面上的文件收起来</h2>
+<p>窗口都藏起来之后，露出来的常常是堆满截图和“最终版_v3”的桌面。在“系统设置 › 桌面与 Dock”里，可以把<strong>在桌面上显示项目</strong>关掉，桌面上的文件就不会显示；文件本身还在，只是看不到。</p>
+<p>要记得开完会再打开，不然会以为文件不见了。</p>
+</section>
+
+<section id="part-5"><aside class="cta-mid"><p>按一下贴纸，窗口全部藏起来</p><a class="button" href="https://apps.apple.com/app/id6826754561">在 Mac App Store 下载</a></aside><h2>5. 每次都要做一遍？绑在一张贴纸上</h2>
+<p>上面四步都有用，但每次开会都要做一轮，结束后再一个个还原。我自己也常忘，所以做了 <a href="/shoo/zh-Hans/">Shoo! 桌面贴纸</a>：</p>
+<ul>
+<li>从贴纸本子撕一张贴纸放到桌面，指定它要管哪些 App 或窗口。</li>
+<li>开会前按一下贴纸，那些窗口全部藏起来；再按一下，全部回到原本的位置。</li>
+<li>可以开启“连桌面一起藏”，用你自己的桌布盖住桌面上的文件。</li>
+<li>Safari、Chrome 和备忘录可以只藏单一窗口；其他 App 会整个藏起来。</li>
+</ul>
+<p>例如做一张“分享屏幕”贴纸，管聊天、购物、音乐和桌面文件；再做一张“有人经过”贴纸，只藏私人的东西。</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/sticker.webp" alt="手绘插画：桌面上贴著一张小贴纸，按下去后杂乱的窗口都收起来" width="600" height="400" loading="lazy" decoding="async"></figure>
+<p>Shoo 需要 macOS 14 以上，免费版附一张小恶魔贴纸，功能完整；其他贴纸、照片做贴纸和分类，是一次买断解锁，不是订阅。它只叫系统藏起或显示你指定的窗口，不会读取窗口里的内容，详见<a href="/shoo/zh-Hans/privacy/">隐私权政策</a>。</p>
+</section>
+
+<section id="part-6"><h2>6. 做法对照表</h2>
+<table class="blog-table">
+<thead><tr><th>做法</th><th>藏什么</th><th>开完会怎么还原</th></tr></thead>
+<tbody>
+<tr><td>关闭分享时的通知</td><td>分享期间跳出的通知</td><td>不用还原，设置一次就好</td></tr>
+<tr><td>只分享单一窗口</td><td>其他所有东西</td><td>不用还原，但切换文件要重选</td></tr>
+<tr><td>Option-Command-H</td><td>其他 App</td><td>一个一个点回来</td></tr>
+<tr><td>关掉桌面项目</td><td>桌面文件</td><td>回设置里打开</td></tr>
+<tr><td>Shoo 贴纸</td><td>你指定的窗口＋桌面文件</td><td>再按一下贴纸</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-7"><h2>7. 常见问题</h2><div class="blog-faq">
+<h3>藏起来的窗口会被关掉吗？</h3><p>不会。Command-H 和 Shoo 都只是隐藏，App 继续执行，内容不会遗失。</p>
+<h3>只分享单一窗口，通知还会被看到吗？</h3><p>一般不会，因为别人只看得到那个窗口。但如果你分享的是整个屏幕，就建议在“系统设置 › 通知”把分享时的通知关掉。</p>
+<h3>为什么 Shoo 有些 App 只能整个藏起来？</h3><p>目前只有 Safari、Chrome 和备忘录能让 Shoo 单独藏一个窗口；其他 App 会整个 App 一起藏起来。</p>
+<h3>Shoo 要钱吗？</h3><p>可以免费下载，附一张功能完整的小恶魔贴纸。想要更多贴纸、用照片做贴纸和分类，是一次买断，不是订阅。</p>
+</div></section></article><aside class="cta"><h2>按一下贴纸，窗口全部藏起来</h2><p>Mac · macOS 14 及以上 · 免费下载</p><a class="button" href="https://apps.apple.com/app/id6826754561">在 Mac App Store 下载</a></aside><p><a href="/shoo/zh-Hans/blog/">← 返回文章列表</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/shoo/zh-Hans/">首页</a><a href="/shoo/zh-Hans/blog/">文章</a><a href="/shoo/zh-Hans/privacy/">隐私</a><a href="/shoo/zh-Hans/support/">支持</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>

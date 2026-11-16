@@ -1,0 +1,24 @@
+[
+ {
+  "slug": "hide-windows-before-screen-sharing-mac",
+  "date": "2026-11-16",
+  "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/shoo/runs/2026-11-16-hide-windows-before-screen-sharing-mac",
+  "langs": {
+   "zh-Hant": {
+    "title": "Mac 分享螢幕前，怎麼把私人視窗和桌面檔案藏起來？",
+    "desc": "開會要分享 Mac 螢幕，怕聊天視窗、購物車或亂七八糟的桌面被看到？整理 macOS 內建的 4 個做法，以及一鍵藏起、一鍵叫回的方法。",
+    "hero_alt": "手繪插畫：筆電螢幕上只剩一份簡報，其他視窗像紙片一樣飛走"
+   },
+   "zh-Hans": {
+    "title": "Mac 分享屏幕前，怎么把私人窗口和桌面文件藏起来？",
+    "desc": "开会要分享 Mac 屏幕，怕聊天窗口、购物车或乱七八糟的桌面被看到？整理 macOS 内建的 4 个做法，以及一键藏起、一键叫回的方法。",
+    "hero_alt": "手绘插画：笔电屏幕上只剩一份简报，其他窗口像纸片一样飞走"
+   },
+   "en": {
+    "title": "Hide Windows and Desktop Files Before Sharing Your Mac Screen",
+    "desc": "Sharing your Mac screen in a meeting? Here are 4 built-in macOS ways to hide chats, carts and a messy desktop, plus a one-click hide and restore.",
+    "hero_alt": "Hand-drawn illustration: a laptop screen with only one presentation left, while the other windows fly away like scraps of paper"
+   }
+  }
+ }
+]
