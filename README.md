@@ -4,6 +4,6 @@ Website for **Shoo** — a hand-drawn sticker book for your Mac desktop. Click a
 
 Served by GitHub Pages at https://sona-orbit.github.io/shoo/
 
-- Home, support and privacy pages in English, 繁體中文, 简体中文, 日本語, 한국어 and ไทย
+- Home, support and privacy pages in English, Español, Deutsch, Français, Português (Brasil), 繁體中文, 简体中文, 日本語, 한국어 and ไทย
 - Static HTML and CSS with a little vanilla JavaScript; no build step on this repository
 - Published by Sona Orbit. Issues and pull requests are turned off.
