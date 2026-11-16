@@ -1,0 +1,105 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/shoo/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>Como esconder janelas e arquivos ao compartilhar a tela do Mac | Shoo! Figurinhas</title><meta name="description" content="Vai compartilhar a tela do Mac? 4 formas nativas do macOS para esconder conversas, carrinhos e a mesa bagunçada, mais ocultar e restaurar com um clique.">
+<link rel="canonical" href="https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="es" href="https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="de" href="https://sona-orbit.github.io/shoo/de/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="fr" href="https://sona-orbit.github.io/shoo/fr/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="pt-BR" href="https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">
+<meta property="og:type" content="article"><meta property="og:title" content="Como esconder janelas e arquivos ao compartilhar a tela do Mac"><meta property="og:description" content="Vai compartilhar a tela do Mac? 4 formas nativas do macOS para esconder conversas, carrinhos e a mesa bagunçada, mais ocultar e restaurar com um clique."><meta property="og:url" content="https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/"><meta property="og:image" content="https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg">
+<link rel="icon" href="/shoo/assets/favicon.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Como esconder janelas e arquivos ao compartilhar a tela do Mac", "description": "Vai compartilhar a tela do Mac? 4 formas nativas do macOS para esconder conversas, carrinhos e a mesa bagunçada, mais ocultar e restaurar com um clique.", "inLanguage": "pt-BR", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "mainEntityOfPage": "https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/", "image": "https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "pt-BR", "mainEntity": [{"@type": "Question", "name": "As janelas ocultas são fechadas?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Comando-H e o Shoo apenas ocultam. O app continua aberto e nada se perde."}}, {"@type": "Question", "name": "Se eu compartilhar uma única janela, as pessoas ainda veem as notificações?", "acceptedAnswer": {"@type": "Answer", "text": "Em geral, não, porque as pessoas só veem aquela janela. Mas, se você compartilhar a tela inteira, desative as notificações durante o compartilhamento em Ajustes do Sistema › Notificações."}}, {"@type": "Question", "name": "Por que o Shoo só consegue ocultar alguns apps por inteiro?", "acceptedAnswer": {"@type": "Answer", "text": "Por enquanto, só Safari, Chrome e Notas permitem que o Shoo oculte uma única janela. Os outros apps são ocultados por inteiro."}}, {"@type": "Question", "name": "O Shoo é pago?", "acceptedAnswer": {"@type": "Answer", "text": "Você pode baixar de graça. Ele vem com uma figurinha de diabinho vermelho que tem todos os recursos. Mais figurinhas, figurinhas de foto e abas de categorias são uma compra única, não uma assinatura."}}]}</script><style>
+:root{--bg:#faf8f3;--soft:#f3efe6;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#b0330f}
+@media (prefers-color-scheme:dark){:root{--bg:#171b25;--soft:#1f2430;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ff8a6b}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/shoo/pt-BR/"><img src="/shoo/assets/icon-192.webp" alt="" width="30" height="30">Shoo! Figurinhas</a>
+<nav><a href="/shoo/pt-BR/">Início</a><a class="on" href="/shoo/pt-BR/blog/">Artigos</a></nav></header>
+<main><p class="eyebrow">Shoo! Figurinhas · Artigos</p><h1>Como esconder janelas e arquivos ao compartilhar a tela do Mac</h1><p class="intro">A ordem mais segura antes de compartilhar a tela: desative as notificações, compartilhe uma única janela, oculte os outros apps com um atalho e depois guarde os arquivos da mesa. O macOS faz tudo isso, mas dá muitos passos. Se você tem reuniões todos os dias, pode ligar tudo a uma só figurinha. Um clique oculta tudo. Outro clique traz tudo de volta.</p><p class="meta"><time datetime="2026-11-16">2026-11-16</time> · Cerca de 5 min de leitura</p><p class="langs"><a href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/">繁體中文</a><a href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/">简体中文</a><a href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">English</a><a href="https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/">Español</a><a href="https://sona-orbit.github.io/shoo/de/blog/hide-windows-before-screen-sharing-mac/">Deutsch</a><a href="https://sona-orbit.github.io/shoo/fr/blog/hide-windows-before-screen-sharing-mac/">Français</a><b>Português</b></p><figure><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.webp" alt="Ilustração desenhada à mão: a tela de um notebook com apenas uma apresentação, enquanto as outras janelas voam como pedaços de papel" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>Conteúdo</strong><ol><li><a href="#part-1">Desative as notificações durante o compartilhamento</a></li><li><a href="#part-2">Compartilhe uma janela, não a tela inteira</a></li><li><a href="#part-3">Oculte os outros apps com um atalho</a></li><li><a href="#part-4">Guarde os arquivos da mesa</a></li><li><a href="#part-5">Faz isso toda vez? Ligue tudo a uma figurinha</a></li><li><a href="#part-6">Comparação rápida dos métodos</a></li><li><a href="#part-7">Perguntas frequentes</a></li></ol></nav><article><p class="blog-note">Sou Sona Orbit, desenvolvedora independente do Shoo! Figurinhas. Os ajustes e atalhos do macOS neste artigo seguem os documentos oficiais de suporte da Apple (conferidos em novembro de 2026). Os recursos do Shoo seguem as descrições deste site.</p>
+
+<section id="part-1"><h2>1. Desative as notificações durante o compartilhamento</h2>
+<p>O maior risco não é uma janela aberta. É uma notificação de mensagem aparecendo no meio da sua apresentação. Em Ajustes do Sistema › Notificações, há uma opção para <strong>permitir notificações ao espelhar ou compartilhar a tela</strong>. Desative essa opção e as notificações ficam pausadas enquanto você compartilha.</p>
+<p>Você ajusta isso uma única vez. Vale para todas as vezes que compartilhar a tela daí em diante, então faça isso primeiro.</p>
+</section>
+
+<section id="part-2"><h2>2. Compartilhe uma janela, não a tela inteira</h2>
+<p>A maioria dos apps de videorreunião deixa você escolher “Tela Inteira” ou “Uma Janela” ao compartilhar. Se você escolher uma única janela, mais nada aparece.</p>
+<p>O ponto fraco: se precisar trocar para outro arquivo no meio da reunião, você tem que parar de compartilhar e escolher de novo. Para ganhar tempo, muita gente compartilha a tela inteira. Aí todo mundo vê o que estiver aberto atrás dos seus slides.</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/share.webp" alt="Ilustração desenhada à mão: uma janela emoldurada e compartilhada, com as outras janelas esmaecidas ao lado" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. Oculte os outros apps com um atalho</h2>
+<p>Se você precisa mesmo compartilhar a tela inteira, oculte os apps que não quer mostrar antes de começar. Estes são os atalhos que a Apple lista:</p>
+<table class="blog-table">
+<thead><tr><th>Atalho</th><th>O que faz</th></tr></thead>
+<tbody>
+<tr><td>Comando-H</td><td>Oculta todas as janelas do app em primeiro plano</td></tr>
+<tr><td>Opção-Comando-H</td><td>Mantém só o app em primeiro plano e oculta todos os outros</td></tr>
+<tr><td>Comando-M</td><td>Minimiza a janela em primeiro plano no Dock</td></tr>
+<tr><td>Comando-Mission Control ou Fn-F11</td><td>Mostra a mesa (as janelas saem do caminho por um instante)</td></tr>
+</tbody>
+</table>
+<p>Opção-Comando-H é o mais rápido. Vá para a apresentação que você vai fazer, aperte uma vez e todos os outros apps somem. Só que, depois da reunião, você precisa clicar em cada app para trazê-lo de volta, um por um. E ainda tem que reorganizar as janelas por conta própria.</p>
+</section>
+
+<section id="part-4"><h2>4. Guarde os arquivos da mesa</h2>
+<p>Com as janelas ocultas, o que aparece costuma ser uma mesa cheia de capturas de tela e arquivos chamados “final_v3_agora_vai”. Em Ajustes do Sistema › Mesa e Dock, você pode desativar <strong>Mostrar Itens na Mesa</strong>. Os arquivos deixam de aparecer na mesa. Continuam lá, só que fora de vista.</p>
+<p>Lembre-se de ativar de novo depois da reunião. Senão, você pode achar que seus arquivos sumiram.</p>
+</section>
+
+<section id="part-5"><aside class="cta-mid"><p>Um clique na figurinha. As janelas somem.</p><a class="button" href="https://apps.apple.com/app/id6826754561">Baixar na Mac App Store</a></aside><h2>5. Faz isso toda vez? Ligue tudo a uma figurinha</h2>
+<p>Os quatro passos funcionam. Mas você precisa repeti-los antes de cada reunião e depois desfazer um por um. Eu também esqueço, então criei o <a href="/shoo/pt-BR/">Shoo! Figurinhas</a>:</p>
+<ul>
+<li>Destaque uma figurinha do álbum, cole na sua mesa e escolha quais apps ou janelas ela vai cuidar.</li>
+<li>Clique na figurinha antes de uma reunião e essas janelas se ocultam de uma vez. Clique de novo e tudo volta para onde estava.</li>
+<li>Ative “Ocultar itens da mesa também” para cobrir os arquivos da sua mesa com o seu próprio papel de parede.</li>
+<li>Safari, Chrome e Notas podem ocultar uma única janela. Os outros apps são ocultados por inteiro.</li>
+</ul>
+<p>Por exemplo, crie uma figurinha “Compartilhar Tela” que cuida de conversas, compras, música e arquivos da mesa. Depois crie uma figurinha “Alguém passando” que oculta só as suas coisas particulares.</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/sticker.webp" alt="Ilustração desenhada à mão: uma figurinha pequena na mesa e, com um clique, as janelas bagunçadas são arrumadas" width="600" height="400" loading="lazy" decoding="async"></figure>
+<p>O Shoo exige macOS 14 ou posterior. A versão gratuita vem com uma figurinha de diabinho vermelho e todos os recursos. Mais figurinhas, figurinhas de foto e abas de categorias são liberadas com uma compra única, não com assinatura. O Shoo só pede ao sistema que oculte ou mostre as janelas que você escolheu. Ele nunca lê o que há dentro delas. Veja a <a href="/shoo/pt-BR/privacy/">Política de Privacidade</a> para mais detalhes.</p>
+</section>
+
+<section id="part-6"><h2>6. Comparação rápida dos métodos</h2>
+<table class="blog-table">
+<thead><tr><th>Método</th><th>O que oculta</th><th>Como restaurar depois da reunião</th></tr></thead>
+<tbody>
+<tr><td>Desativar notificações durante o compartilhamento</td><td>Notificações que aparecem enquanto você compartilha</td><td>Nada a restaurar, ajuste uma vez</td></tr>
+<tr><td>Compartilhar uma única janela</td><td>Todo o resto</td><td>Nada a restaurar, mas trocar de arquivo exige escolher de novo</td></tr>
+<tr><td>Opção-Comando-H</td><td>Os outros apps</td><td>Clicar em cada um para trazê-lo de volta</td></tr>
+<tr><td>Desativar itens da mesa</td><td>Arquivos da mesa</td><td>Ativar de novo nos Ajustes</td></tr>
+<tr><td>Figurinha do Shoo</td><td>As janelas que você escolheu + arquivos da mesa</td><td>Clicar na figurinha de novo</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-7"><h2>7. Perguntas frequentes</h2><div class="blog-faq">
+<h3>As janelas ocultas são fechadas?</h3><p>Não. Comando-H e o Shoo apenas ocultam. O app continua aberto e nada se perde.</p>
+<h3>Se eu compartilhar uma única janela, as pessoas ainda veem as notificações?</h3><p>Em geral, não, porque as pessoas só veem aquela janela. Mas, se você compartilhar a tela inteira, desative as notificações durante o compartilhamento em Ajustes do Sistema › Notificações.</p>
+<h3>Por que o Shoo só consegue ocultar alguns apps por inteiro?</h3><p>Por enquanto, só Safari, Chrome e Notas permitem que o Shoo oculte uma única janela. Os outros apps são ocultados por inteiro.</p>
+<h3>O Shoo é pago?</h3><p>Você pode baixar de graça. Ele vem com uma figurinha de diabinho vermelho que tem todos os recursos. Mais figurinhas, figurinhas de foto e abas de categorias são uma compra única, não uma assinatura.</p>
+</div></section></article><aside class="cta"><h2>Um clique na figurinha. As janelas somem.</h2><p>Mac · macOS 14 ou posterior · Download gratuito</p><a class="button" href="https://apps.apple.com/app/id6826754561">Baixar na Mac App Store</a></aside><p><a href="/shoo/pt-BR/blog/">← Voltar aos artigos</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/shoo/pt-BR/">Início</a><a href="/shoo/pt-BR/blog/">Artigos</a><a href="/shoo/pt-BR/privacy/">Privacidade</a><a href="/shoo/pt-BR/support/">Ajuda</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>

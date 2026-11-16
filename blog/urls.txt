@@ -1,5 +1,13 @@
 https://sona-orbit.github.io/shoo/blog/
 https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/
+https://sona-orbit.github.io/shoo/de/blog/
+https://sona-orbit.github.io/shoo/de/blog/hide-windows-before-screen-sharing-mac/
+https://sona-orbit.github.io/shoo/es/blog/
+https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/
+https://sona-orbit.github.io/shoo/fr/blog/
+https://sona-orbit.github.io/shoo/fr/blog/hide-windows-before-screen-sharing-mac/
+https://sona-orbit.github.io/shoo/pt-BR/blog/
+https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/
 https://sona-orbit.github.io/shoo/zh-Hans/blog/
 https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/
 https://sona-orbit.github.io/shoo/zh-Hant/blog/

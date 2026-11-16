@@ -18,6 +18,26 @@
     "title": "Hide Windows and Desktop Files Before Sharing Your Mac Screen",
     "desc": "Sharing your Mac screen in a meeting? Here are 4 built-in macOS ways to hide chats, carts and a messy desktop, plus a one-click hide and restore.",
     "hero_alt": "Hand-drawn illustration: a laptop screen with only one presentation left, while the other windows fly away like scraps of paper"
+   },
+   "es": {
+    "title": "Cómo ocultar ventanas y archivos al compartir pantalla en Mac",
+    "desc": "¿Compartes pantalla en el Mac? 4 formas integradas en macOS para ocultar chats, compras y un escritorio desordenado, y un clic para ocultar y restaurar.",
+    "hero_alt": "Ilustración dibujada a mano: la pantalla de un portátil con una sola presentación, mientras las demás ventanas salen volando como trozos de papel"
+   },
+   "de": {
+    "title": "Mac-Bildschirm teilen: Fenster und Dateien vorher ausblenden",
+    "desc": "Mac-Bildschirm im Meeting teilen? 4 macOS-Wege, um Chats, Warenkörbe und einen unaufgeräumten Schreibtisch zu verbergen, plus Ausblenden per Klick.",
+    "hero_alt": "Handgezeichnete Illustration: ein Laptop-Bildschirm, auf dem nur noch eine Präsentation übrig ist, während die anderen Fenster wie Papierschnipsel davonfliegen"
+   },
+   "fr": {
+    "title": "Masquer fenêtres et bureau avant de partager l'écran du Mac",
+    "desc": "Partage d'écran en réunion ? 4 méthodes macOS intégrées pour masquer discussions, paniers et bureau en désordre, puis masquage et retour en un clic.",
+    "hero_alt": "Illustration dessinée à la main : un écran d'ordinateur portable où il ne reste qu'une présentation, pendant que les autres fenêtres s'envolent comme des bouts de papier"
+   },
+   "pt-BR": {
+    "title": "Como esconder janelas e arquivos ao compartilhar a tela do Mac",
+    "desc": "Vai compartilhar a tela do Mac? 4 formas nativas do macOS para esconder conversas, carrinhos e a mesa bagunçada, mais ocultar e restaurar com um clique.",
+    "hero_alt": "Ilustração desenhada à mão: a tela de um notebook com apenas uma apresentação, enquanto as outras janelas voam como pedaços de papel"
    }
   }
  }

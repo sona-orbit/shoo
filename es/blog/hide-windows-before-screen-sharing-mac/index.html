@@ -1,0 +1,105 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#171b25" media="(prefers-color-scheme: dark)">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/shoo/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>Cómo ocultar ventanas y archivos al compartir pantalla en Mac | Shoo! Stickers</title><meta name="description" content="¿Compartes pantalla en el Mac? 4 formas integradas en macOS para ocultar chats, compras y un escritorio desordenado, y un clic para ocultar y restaurar.">
+<link rel="canonical" href="https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="es" href="https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="de" href="https://sona-orbit.github.io/shoo/de/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="fr" href="https://sona-orbit.github.io/shoo/fr/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="pt-BR" href="https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">
+<meta property="og:type" content="article"><meta property="og:title" content="Cómo ocultar ventanas y archivos al compartir pantalla en Mac"><meta property="og:description" content="¿Compartes pantalla en el Mac? 4 formas integradas en macOS para ocultar chats, compras y un escritorio desordenado, y un clic para ocultar y restaurar."><meta property="og:url" content="https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/"><meta property="og:image" content="https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg">
+<link rel="icon" href="/shoo/assets/favicon.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Cómo ocultar ventanas y archivos al compartir pantalla en Mac", "description": "¿Compartes pantalla en el Mac? 4 formas integradas en macOS para ocultar chats, compras y un escritorio desordenado, y un clic para ocultar y restaurar.", "inLanguage": "es", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "mainEntityOfPage": "https://sona-orbit.github.io/shoo/es/blog/hide-windows-before-screen-sharing-mac/", "image": "https://sona-orbit.github.io/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "es", "mainEntity": [{"@type": "Question", "name": "¿Las ventanas ocultas se cierran?", "acceptedAnswer": {"@type": "Answer", "text": "No. Comando-H y Shoo solo ocultan. La app sigue funcionando y no se pierde nada."}}, {"@type": "Question", "name": "Si comparto una sola ventana, ¿pueden verse las notificaciones?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente no, porque los demás solo ven esa ventana. Pero si compartes toda la pantalla, desactiva las notificaciones al compartir en Ajustes del Sistema › Notificaciones."}}, {"@type": "Question", "name": "¿Por qué Shoo solo puede ocultar algunas apps enteras?", "acceptedAnswer": {"@type": "Answer", "text": "Ahora mismo, solo Safari, Chrome y Notas permiten que Shoo oculte una sola ventana. Las demás apps se ocultan enteras."}}, {"@type": "Question", "name": "¿Shoo cuesta dinero?", "acceptedAnswer": {"@type": "Answer", "text": "Puedes descargarlo gratis. Incluye un pequeño sticker de diablillo rojo con todas las funciones. Más stickers, stickers de fotos y pestañas de categorías son una compra única, no una suscripción."}}]}</script><style>
+:root{--bg:#faf8f3;--soft:#f3efe6;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#b0330f}
+@media (prefers-color-scheme:dark){:root{--bg:#171b25;--soft:#1f2430;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ff8a6b}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/shoo/es/"><img src="/shoo/assets/icon-192.webp" alt="" width="30" height="30">Shoo! Stickers</a>
+<nav><a href="/shoo/es/">Inicio</a><a class="on" href="/shoo/es/blog/">Artículos</a></nav></header>
+<main><p class="eyebrow">Shoo! Stickers · Artículos</p><h1>Cómo ocultar ventanas y archivos al compartir pantalla en Mac</h1><p class="intro">El orden más seguro antes de compartir pantalla: desactiva las notificaciones, comparte una sola ventana, oculta las demás apps con un atajo y guarda los archivos del escritorio. macOS puede hacerlo todo, pero requiere muchos pasos. Si tienes reuniones a diario, puedes unirlo todo en un solo sticker. Un clic lo oculta todo. Otro clic lo devuelve todo.</p><p class="meta"><time datetime="2026-11-16">2026-11-16</time> · Unos 5 min de lectura</p><p class="langs"><a href="https://sona-orbit.github.io/shoo/zh-Hant/blog/hide-windows-before-screen-sharing-mac/">繁體中文</a><a href="https://sona-orbit.github.io/shoo/zh-Hans/blog/hide-windows-before-screen-sharing-mac/">简体中文</a><a href="https://sona-orbit.github.io/shoo/blog/hide-windows-before-screen-sharing-mac/">English</a><b>Español</b><a href="https://sona-orbit.github.io/shoo/de/blog/hide-windows-before-screen-sharing-mac/">Deutsch</a><a href="https://sona-orbit.github.io/shoo/fr/blog/hide-windows-before-screen-sharing-mac/">Français</a><a href="https://sona-orbit.github.io/shoo/pt-BR/blog/hide-windows-before-screen-sharing-mac/">Português</a></p><figure><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/hero.webp" alt="Ilustración dibujada a mano: la pantalla de un portátil con una sola presentación, mientras las demás ventanas salen volando como trozos de papel" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>Contenido</strong><ol><li><a href="#part-1">Desactiva las notificaciones al compartir</a></li><li><a href="#part-2">Comparte una ventana, no toda la pantalla</a></li><li><a href="#part-3">Oculta las demás apps con un atajo</a></li><li><a href="#part-4">Guarda los archivos del escritorio</a></li><li><a href="#part-5">¿Lo haces siempre? Únelo en un solo sticker</a></li><li><a href="#part-6">Comparación rápida de los métodos</a></li><li><a href="#part-7">Preguntas frecuentes</a></li></ol></nav><article><p class="blog-note">Soy Sona Orbit, la desarrolladora independiente de Shoo! Stickers. Los ajustes y atajos de macOS de este artículo siguen los documentos de soporte oficiales de Apple (revisados en noviembre de 2026). Las funciones de Shoo siguen las descripciones de este sitio.</p>
+
+<section id="part-1"><h2>1. Desactiva las notificaciones al compartir</h2>
+<p>El mayor riesgo no es una ventana abierta. Es que te salte la notificación de un mensaje en pleno uso compartido. En Ajustes del Sistema › Notificaciones hay una opción para <strong>permitir notificaciones al duplicar o compartir la pantalla</strong>. Desactívala y las notificaciones quedan en pausa mientras compartes.</p>
+<p>Solo tienes que configurarlo una vez. Funcionará cada vez que compartas pantalla a partir de ahora, así que empieza por aquí.</p>
+</section>
+
+<section id="part-2"><h2>2. Comparte una ventana, no toda la pantalla</h2>
+<p>La mayoría de las apps de videorreunión te dejan elegir “Toda la pantalla” o “Una sola ventana” al compartir. Si eliges una sola ventana, no se ve nada más.</p>
+<p>El inconveniente: si a mitad de la reunión necesitas pasar a otro archivo, tienes que dejar de compartir y volver a elegir. Para ahorrar tiempo, mucha gente comparte toda la pantalla. Entonces todos pueden ver lo que tienes abierto detrás de tus diapositivas.</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/share.webp" alt="Ilustración dibujada a mano: una ventana enmarcada y compartida, con las demás ventanas difuminadas a su lado" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. Oculta las demás apps con un atajo</h2>
+<p>Si de verdad necesitas compartir toda la pantalla, oculta antes de empezar las apps que no quieres que se vean. Estos son los atajos que indica Apple:</p>
+<table class="blog-table">
+<thead><tr><th>Atajo</th><th>Qué hace</th></tr></thead>
+<tbody>
+<tr><td>Comando-H</td><td>Oculta todas las ventanas de la app que está al frente</td></tr>
+<tr><td>Opción-Comando-H</td><td>Deja solo la app que está al frente y oculta todas las demás</td></tr>
+<tr><td>Comando-M</td><td>Minimiza la ventana que está al frente en el Dock</td></tr>
+<tr><td>Comando-Mission Control o Fn-F11</td><td>Muestra el escritorio (las ventanas se apartan un momento)</td></tr>
+</tbody>
+</table>
+<p>Opción-Comando-H es el más rápido. Pasa a la presentación que vas a dar, púlsalo una vez y las demás apps se ocultan. Pero al terminar la reunión tendrás que volver a abrir cada app una por una. Y tendrás que recolocar tú mismo las ventanas.</p>
+</section>
+
+<section id="part-4"><h2>4. Guarda los archivos del escritorio</h2>
+<p>Cuando las ventanas están ocultas, lo que queda a la vista suele ser un escritorio lleno de capturas de pantalla y archivos llamados “definitivo_v3”. En Ajustes del Sistema › Escritorio y Dock puedes desactivar <strong>Mostrar elementos en el escritorio</strong>. Los archivos dejan de verse en el escritorio. Siguen ahí, solo que fuera de la vista.</p>
+<p>Acuérdate de volver a activarlo después de la reunión. Si no, puede que pienses que tus archivos han desaparecido.</p>
+</section>
+
+<section id="part-5"><aside class="cta-mid"><p>Un clic en el sticker. Las ventanas desaparecen.</p><a class="button" href="https://apps.apple.com/app/id6826754561">Descargar en la Mac App Store</a></aside><h2>5. ¿Lo haces siempre? Únelo en un solo sticker</h2>
+<p>Los cuatro pasos funcionan. Pero tienes que repetirlos antes de cada reunión y luego deshacerlos uno por uno. A mí también se me olvida, así que creé <a href="/shoo/es/">Shoo! Stickers</a>:</p>
+<ul>
+<li>Despega un sticker del álbum, pégalo en tu escritorio y elige qué apps o ventanas cuida.</li>
+<li>Haz clic en el sticker antes de una reunión y todas esas ventanas se ocultan. Haz clic otra vez y todo vuelve a su sitio.</li>
+<li>Activa “Ocultar también los elementos del escritorio” para tapar los archivos de tu escritorio con tu propio fondo de pantalla.</li>
+<li>Safari, Chrome y Notas pueden ocultar una sola ventana. Las demás apps se ocultan enteras.</li>
+</ul>
+<p>Por ejemplo, crea un sticker “Compartir pantalla” que se encargue del chat, las compras, la música y los archivos del escritorio. Después crea un sticker “Pasa alguien” que oculte solo tus cosas privadas.</p>
+<figure class="blog-illus"><img src="/shoo/assets/blog/hide-windows-before-screen-sharing-mac/sticker.webp" alt="Ilustración dibujada a mano: un sticker pequeño en el escritorio y, con un clic, las ventanas desordenadas se recogen" width="600" height="400" loading="lazy" decoding="async"></figure>
+<p>Shoo necesita macOS 14 o posterior. La versión gratuita incluye un pequeño sticker de diablillo rojo con todas las funciones. Más stickers, stickers de fotos y pestañas de categorías se desbloquean con una compra única, no con una suscripción. Shoo solo le pide al sistema que oculte o muestre las ventanas que has elegido. Nunca lee lo que hay dentro. Consulta la <a href="/shoo/es/privacy/">Política de privacidad</a> para más detalles.</p>
+</section>
+
+<section id="part-6"><h2>6. Comparación rápida de los métodos</h2>
+<table class="blog-table">
+<thead><tr><th>Método</th><th>Qué oculta</th><th>Cómo restaurar después de la reunión</th></tr></thead>
+<tbody>
+<tr><td>Desactivar notificaciones al compartir</td><td>Las notificaciones que aparecen mientras compartes</td><td>No hay nada que restaurar, se configura una vez</td></tr>
+<tr><td>Compartir una sola ventana</td><td>Todo lo demás</td><td>No hay nada que restaurar, pero para cambiar de archivo hay que volver a elegir</td></tr>
+<tr><td>Opción-Comando-H</td><td>Las demás apps</td><td>Volver a abrir cada una</td></tr>
+<tr><td>Desactivar los elementos del escritorio</td><td>Los archivos del escritorio</td><td>Volver a activarlo en Ajustes</td></tr>
+<tr><td>Sticker de Shoo</td><td>Las ventanas que elijas + los archivos del escritorio</td><td>Hacer clic otra vez en el sticker</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-7"><h2>7. Preguntas frecuentes</h2><div class="blog-faq">
+<h3>¿Las ventanas ocultas se cierran?</h3><p>No. Comando-H y Shoo solo ocultan. La app sigue funcionando y no se pierde nada.</p>
+<h3>Si comparto una sola ventana, ¿pueden verse las notificaciones?</h3><p>Normalmente no, porque los demás solo ven esa ventana. Pero si compartes toda la pantalla, desactiva las notificaciones al compartir en Ajustes del Sistema › Notificaciones.</p>
+<h3>¿Por qué Shoo solo puede ocultar algunas apps enteras?</h3><p>Ahora mismo, solo Safari, Chrome y Notas permiten que Shoo oculte una sola ventana. Las demás apps se ocultan enteras.</p>
+<h3>¿Shoo cuesta dinero?</h3><p>Puedes descargarlo gratis. Incluye un pequeño sticker de diablillo rojo con todas las funciones. Más stickers, stickers de fotos y pestañas de categorías son una compra única, no una suscripción.</p>
+</div></section></article><aside class="cta"><h2>Un clic en el sticker. Las ventanas desaparecen.</h2><p>Mac · macOS 14 o posterior · Descarga gratis</p><a class="button" href="https://apps.apple.com/app/id6826754561">Descargar en la Mac App Store</a></aside><p><a href="/shoo/es/blog/">← Volver a los artículos</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/shoo/es/">Inicio</a><a href="/shoo/es/blog/">Artículos</a><a href="/shoo/es/privacy/">Privacidad</a><a href="/shoo/es/support/">Ayuda</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>
