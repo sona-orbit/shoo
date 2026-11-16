@@ -56,8 +56,8 @@ a { color: inherit; }
 .nav { display: flex; align-items: center; gap: 20px; height: 62px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.25rem; text-decoration: none; }
 .brand img { width: 34px; height: 34px; }
-.nav-links { display: flex; gap: 18px; margin-left: auto; }
-.nav-links a { text-decoration: none; color: var(--muted); font-size: 0.9375rem; }
+.nav-links { display: flex; gap: 18px; margin-left: auto; min-width: 0; }
+.nav-links a { text-decoration: none; color: var(--muted); font-size: 0.9375rem; white-space: nowrap; }
 .nav-links a[aria-current="page"], .nav-links a:hover { color: var(--ink); }
 .lang { font: inherit; font-size: 0.875rem; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 5px 8px; }
 
@@ -310,4 +310,13 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
   html { scroll-behavior: auto; }
   .demo-sticker, .drop-photo, .drop-book .drop-state.next, .moon-btn, .moon-hint, .moon-bubble, .board-tip,
   .hero-text, .site-header, .site-header .nav-links, .site-header label, main > section, body > footer, .board-away { transition-duration: .01s !important; transition-delay: 0s !important; }
+}
+
+/* 手機：日文、泰文的選單字比較長，不換行；縮小間距、字級與語言選單，真的放不下就讓選單左右滑 */
+@media (max-width: 640px) {
+  .nav { gap: 8px; }
+  .nav-links { gap: 10px; overflow-x: auto; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { font-size: 0.8125rem; }
+  .lang { font-size: 0.8125rem; padding: 4px 4px; max-width: 6.5em; }
 }
