@@ -1,7 +1,7 @@
 // Language: the root (English) follows the browser language once; a saved choice wins.
 // A direct language URL stays where it is. The menu switches and remembers.
 (() => {
-  const supported = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'th', 'es', 'de', 'fr', 'pt-BR'];
+  const supported = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'th', 'es', 'de', 'fr', 'pt-BR', 'vi'];
   const current = window.SHOO_LOCALE;
   // Folder-style URLs (no .html): page is '', 'privacy/' or 'support/'; root climbs back to the site root
   const page = window.SHOO_PAGE || '';
@@ -16,7 +16,7 @@
       /^zh-(tw|hk|mo|hant)/.test(browser) ? 'zh-Hant' :
       /^zh(?:-|$)/.test(browser) ? 'zh-Hans' :
       /^ja/.test(browser) ? 'ja' : /^ko/.test(browser) ? 'ko' : /^th/.test(browser) ? 'th' :
-      /^es/.test(browser) ? 'es' : /^de/.test(browser) ? 'de' : /^fr/.test(browser) ? 'fr' : /^pt/.test(browser) ? 'pt-BR' : 'en';
+      /^es/.test(browser) ? 'es' : /^de/.test(browser) ? 'de' : /^fr/.test(browser) ? 'fr' : /^pt/.test(browser) ? 'pt-BR' : /^vi/.test(browser) ? 'vi' : 'en';
     const preferred = supported.includes(saved) ? saved : guess;
     if (preferred !== 'en') { location.replace(urlFor(preferred) + location.hash); return; }
   }
