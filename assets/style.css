@@ -285,6 +285,7 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
 @media (max-width: 640px) {
   .moon-shoo { top: 72px; right: 10px; }
   .moon-btn { width: 60px; height: 60px; }
+  .eyebrow { max-width: calc(100% - 68px); }   /* 月亮貼紙固定在右上角：副標長的語言（越南文、西文）換行，不要鑽到月亮底下 */
   .moon-hint { font-size: 0.8125rem; padding: 6px 10px; white-space: normal; max-width: 52vw; }
 }
 @media (prefers-reduced-motion: reduce) {
