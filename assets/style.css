@@ -321,3 +321,7 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
   .nav-links a { font-size: 0.8125rem; }
   .lang { font-size: 0.8125rem; padding: 4px 4px; max-width: 6.5em; }
 }
+
+/* crawlable language links (the header <select> is not followed by crawlers) */
+.foot-langs { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 14px; }
+.foot-langs a { color: var(--muted); font-size: .8125rem; }
