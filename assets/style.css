@@ -325,3 +325,22 @@ html.moon-shooed, html.moon-shooed body { overflow: hidden; }
 /* crawlable language links (the header <select> is not followed by crawlers) */
 .foot-langs { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 14px; }
 .foot-langs a { color: var(--muted); font-size: .8125rem; }
+
+/* ===== window marks demo (S1, 2026-11-27): same fake desktop as the demo above; the mark is drawn like the app's WindowMarks.swift ===== */
+.marks { --mark: #ffa491; }  /* the little devil's tomato, mixed 45% with white, as in the app */
+.mark-lock { font-size: .75em; margin-left: 2px; }
+.mark-win { position: absolute; z-index: 2; }
+.mark-win .demo-window { left: 0; top: 0; width: 100%; height: 100%; }
+.mark-tape, .mark-mini, .mark-stitch, .mark-glow { position: absolute; opacity: 0; transition: opacity .25s ease; pointer-events: none; }
+.mark-tape { left: 0; top: 0; width: 24%; aspect-ratio: 74 / 22; transform: translate(-44%, -28%) rotate(-38deg); opacity: 0;
+  background: repeating-linear-gradient(135deg, transparent 0 4px, rgba(255,255,255,.28) 4px 6.5px), var(--mark);
+  clip-path: polygon(4% 0, 96% 0, 100% 10%, 96% 30%, 100% 50%, 96% 70%, 100% 90%, 96% 100%, 4% 100%, 0 90%, 4% 70%, 0 50%, 4% 30%, 0 10%); }
+.mark-mini { left: 0; top: 0; width: 13%; height: auto; transform: translate(-72%, -78%) rotate(-10deg); filter: drop-shadow(0 2px 3px rgba(0,0,0,.2)); }
+.mark-stitch { inset: -7px; border: 2.5px dashed var(--mark); border-radius: 15px; }
+.mark-glow { inset: -3px; border: 4px solid var(--mark); border-radius: 12px; box-shadow: 0 0 14px 3px var(--mark); }
+.marks[data-style="tape"] .mark-tape, .marks[data-style="stitch"] .mark-tape { opacity: .82; }
+.marks[data-style="stitch"] .mark-tape { width: 21%; }
+.marks[data-style="sticker"] .mark-mini, .marks[data-style="stitch"] .mark-stitch, .marks[data-style="glow"] .mark-glow { opacity: 1; }
+.marks-sticker { position: absolute; left: 4%; bottom: 12%; width: 12%; z-index: 40; }
+.marks-sticker img { width: 100%; filter: drop-shadow(0 6px 8px rgba(0,0,0,.25)); }
+@media (prefers-reduced-motion: reduce) { .mark-tape, .mark-mini, .mark-stitch, .mark-glow { transition: none; } }
